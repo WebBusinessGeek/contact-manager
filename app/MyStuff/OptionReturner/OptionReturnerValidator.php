@@ -6,7 +6,7 @@
  * Time: 7:04 PM
  */
 
-namespace App\MyStuff\Polymorphic;
+namespace App\MyStuff\OptionReturner;
 
 
 class OptionReturnerValidator {

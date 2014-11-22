@@ -9,8 +9,8 @@
 namespace tests\OptionReturner;
 
 
-use App\MyStuff\Polymorphic\OptionReturner;
-use App\MyStuff\Polymorphic\OptionReturnerFactory;
+use App\MyStuff\OptionReturner\OptionReturner;
+use App\MyStuff\OptionReturner\OptionReturnerFactory;
 
 class OptionReturnerFactoryTest extends \PHPUnit_Framework_TestCase {
 

@@ -9,8 +9,8 @@
 namespace tests\OptionReturner;
 
 
-use App\MyStuff\Polymorphic\OptionReturner;
-use App\MyStuff\Polymorphic\OptionReturnerInvoker;
+use App\MyStuff\OptionReturner\OptionReturner;
+use App\MyStuff\OptionReturner\OptionReturnerInvoker;
 
 class OptionReturnerInvokerTest extends \PHPUnit_Framework_TestCase {
 

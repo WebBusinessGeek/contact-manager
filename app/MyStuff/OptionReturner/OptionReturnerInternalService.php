@@ -6,7 +6,7 @@
  * Time: 7:03 PM
  */
 
-namespace App\MyStuff\Polymorphic;
+namespace App\MyStuff\OptionReturner;
 
 
 class OptionReturnerInternalService {
