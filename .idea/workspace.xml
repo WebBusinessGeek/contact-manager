@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerCommandControllerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerFactoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerCommandController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerFactory.php" afterPath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerInvoker.php" afterPath="$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerInvoker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OptionReturnerFactory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerFactory.php">
+      <file leaf-file-name="OptionReturnerInvokerTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35971224" vertical-offset="0" max-vertical-offset="695">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6791367" vertical-offset="1228" max-vertical-offset="1950">
+              <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -326,34 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerInvoker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877698" vertical-offset="0" max-vertical-offset="695">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <marker date="1416616660000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416616660000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32374102" vertical-offset="50" max-vertical-offset="1275">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <marker date="1416617039000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416617039000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerFactoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50359714" vertical-offset="0" max-vertical-offset="695">
@@ -371,6 +338,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35971224" vertical-offset="0" max-vertical-offset="695">
           <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <marker date="1416617138000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416617138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416617138000" expanded="true" signature="-1:-1" placeholder=" Returns a new OptionReturner instance ..." />
+            <marker date="1416617138000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/OptionReturnerInvoker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7194245" vertical-offset="525" max-vertical-offset="1225">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <marker date="1416618049000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416618049000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6791367" vertical-offset="1228" max-vertical-offset="1950">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
           <folding />
         </state>
       </provider>
