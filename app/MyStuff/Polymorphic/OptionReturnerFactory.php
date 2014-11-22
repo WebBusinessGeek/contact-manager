@@ -11,4 +11,14 @@ namespace App\MyStuff\Polymorphic;
 
 class OptionReturnerFactory {
 
+
+    /**
+     * Returns a new OptionReturner instance
+     * @return OptionReturner
+     */
+    public function createNewOptionReturner()
+    {
+        return new OptionReturner();
+    }
+
 }
