@@ -28,7 +28,9 @@ class OptionReturnerValidator {
 
     public function getAllowedProperty($propertyKey)
     {
-        if(!$this->isInAllowedProperties($propertyKey))
+        $check = $propertyKey - 1;
+
+        if(!$this->isInAllowedProperties($check))
         {
             throw new InvalidArgumentException('Property does not exist');
         }
@@ -44,6 +46,12 @@ class OptionReturnerValidator {
     {
         return $this->keyExistsInPropertyArray($optionReturner, $this->getAllowedProperty(2), $key);
     }
+
+    public function checkKeyForContactRelationsProperty(OptionReturner $optionReturner, $key)
+    {
+        return $this->keyExistsInPropertyArray($optionReturner, $this->getAllowedProperty(3), $key);
+    }
+
 
     public function isInAllowedProperties($propertyKey)
     {
