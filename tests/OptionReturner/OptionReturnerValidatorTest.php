@@ -45,6 +45,11 @@ class OptionReturnerValidatorTest extends \PHPUnit_Framework_TestCase {
 
     }
 
+    public function test_optionReturnerValidator_getAllowedProperty_method_will_throw_error_if_bad_argument_is_supplied()
+    {
+
+    }
+
 
 
 
