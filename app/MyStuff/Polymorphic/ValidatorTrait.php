@@ -11,9 +11,16 @@ namespace App\MyStuff\Polymorphic;
 
 trait ValidatorTrait {
 
-    public function keyExistsInPropertyArray($class, $property, $key)
+    /**
+     * Checks if key exists in a property array on an object
+     * @param $classInstance
+     * @param $propertyToCheck
+     * @param $key
+     * @return bool
+     */
+    public function keyExistsInPropertyArray($classInstance, $propertyToCheck, $key)
     {
-        return array_key_exists($key, $class->$property);
+        return array_key_exists($key, $classInstance->$propertyToCheck);
     }
 
 }

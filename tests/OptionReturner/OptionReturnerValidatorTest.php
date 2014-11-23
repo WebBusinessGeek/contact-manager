@@ -21,11 +21,33 @@ class OptionReturnerValidatorTest extends \PHPUnit_Framework_TestCase {
 
         $optionReturnerValidator = new OptionReturnerValidator();
 
-        $this->assertEquals(true, $optionReturnerValidator->keyExistsInPropertyArray($optionReturner, 'roles', 1));
-        $this->assertEquals(false, $optionReturnerValidator->keyExistsInPropertyArray($optionReturner, 'roles', 85));
+        $this->assertEquals(true,
+            $optionReturnerValidator->keyExistsInPropertyArray
+            ($optionReturner, $optionReturnerValidator->getAllowedProperty(1), 1));
+
+        $this->assertEquals(false,
+            $optionReturnerValidator->keyExistsInPropertyArray
+            ($optionReturner, $optionReturnerValidator->getAllowedProperty(1), 85));
     }
 
-    //check if value is roles, industries, or contactRelations
+    public function test_optionReturnerValidator_checkKeyForRoles_method_returns_if_key_exists_on_role_property_of_objectReturner_class()
+    {
+        $optionReturner = new OptionReturner();
+
+        $optionReturnerValidator = new OptionReturnerValidator();
+
+        $this->assertEquals(true, $optionReturnerValidator->checkKeyForRolesProperty($optionReturner, 1));
+        $this->assertEquals(false, $optionReturnerValidator->checkKeyForRolesProperty($optionReturner, 89));
+    }
+
+    public function test_optionReturnerValidator_checkKeyForIndustries_method_returns_if_key_exists_on_industries_property()
+    {
+
+    }
+
+
+
+
 
 
 }
