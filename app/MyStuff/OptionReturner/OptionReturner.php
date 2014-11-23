@@ -11,6 +11,11 @@ namespace App\MyStuff\OptionReturner;
 
 class OptionReturner {
 
+    //**** remember to add any new group of options
+    //1. Add a new public property array below
+    //2. Add the group to the OptionReturnerValidator->allowProperties property
+    //3. Create all necessary get/set/group specific methods in all classes
+    //4. Backup with tests
 
     /**
      * The values acceptable for Roles in application
@@ -33,6 +38,7 @@ class OptionReturner {
         'IT',
 
         'Management'
+
 
     ];
 
@@ -57,6 +63,7 @@ class OptionReturner {
 
         'Apparel & Accessories',
 
+
     ];
 
 
@@ -78,6 +85,13 @@ class OptionReturner {
 
         'Partner',
 
+
+
     ];
+    //**** remember to add any new group of options
+    //1. Add a new public property array below
+    //2. Add the group to the OptionReturnerValidator->allowProperties property
+    //3. Create all necessary get/set/group specific methods in all classes
+    //4. Backup with tests
 
 }
