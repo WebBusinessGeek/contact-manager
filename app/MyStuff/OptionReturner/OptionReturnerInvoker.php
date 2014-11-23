@@ -11,37 +11,70 @@ namespace App\MyStuff\OptionReturner;
 
 class OptionReturnerInvoker {
 
-    //call getAllRoles on a OptionReturner resource
+
+    /**
+     * Returns all values stored in Roles property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @return array
+     */
     public function getAllRoles(OptionReturner $optionReturner)
     {
         return $optionReturner->roles;
     }
 
-    //call getSpecificRole on a OptionReturner resource (argument)
+
+    /**
+     * Returns a specific value stored in Roles property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @param $key
+     * @return mixed
+     */
     public function getSpecificRole(OptionReturner $optionReturner, $key)
     {
         return $optionReturner->roles[--$key];
     }
 
-    //call getAllIndustries on a OptionReturner resource
+
+    /**
+     * Returns all values stored in Industries property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @return array
+     */
     public function getAllIndustries(OptionReturner $optionReturner)
     {
         return $optionReturner->industries;
     }
 
-    //call getSpecificIndustry on a OptionReturner resource
+
+    /**
+     * Returns a specific value stored in the Industries property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @param $key
+     * @return mixed
+     */
     public function getSpecificIndustry(OptionReturner $optionReturner, $key)
     {
         return $optionReturner->industries[--$key];
     }
 
-    //call getAllRelations on a OptionReturner resource
+
+    /**
+     * Returns all values stored in the contactRelations property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @return array
+     */
     public function getAllContactRelations(OptionReturner $optionReturner)
     {
         return $optionReturner->contactRelations;
     }
 
-    //call getSpecificRelations on a OptionReturner resource
+
+    /**
+     * Returns a specific value stored in the contactRelations property on a OptionReturner resource
+     * @param OptionReturner $optionReturner
+     * @param $key
+     * @return mixed
+     */
     public function getSpecificContactRelation(OptionReturner $optionReturner, $key)
     {
         return $optionReturner->contactRelations[--$key];
