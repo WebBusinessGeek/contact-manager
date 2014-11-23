@@ -62,7 +62,7 @@ class OptionReturnerValidator {
      * @param $key
      * @return bool
      */
-    public function checkKeyForRolesProperty(OptionReturner $optionReturner, $key)
+    public function checkRolesPropertyForKey(OptionReturner $optionReturner, $key)
     {
         return $this->keyExistsInPropertyArray($optionReturner, $this->getAllowedProperty(1), $key);
     }
@@ -73,7 +73,7 @@ class OptionReturnerValidator {
      * @param $key
      * @return bool
      */
-    public function checkKeyForIndustriesProperty(OptionReturner $optionReturner, $key)
+    public function checkIndustriesPropertyForKey(OptionReturner $optionReturner, $key)
     {
         return $this->keyExistsInPropertyArray($optionReturner, $this->getAllowedProperty(2), $key);
     }
@@ -84,7 +84,7 @@ class OptionReturnerValidator {
      * @param $key
      * @return bool
      */
-    public function checkKeyForContactRelationsProperty(OptionReturner $optionReturner, $key)
+    public function checkContactRelationsPropertyForKey(OptionReturner $optionReturner, $key)
     {
         return $this->keyExistsInPropertyArray($optionReturner, $this->getAllowedProperty(3), $key);
     }

@@ -36,8 +36,8 @@ class OptionReturnerValidatorTest extends \PHPUnit_Framework_TestCase {
 
         $optionReturnerValidator = new OptionReturnerValidator();
 
-        $this->assertEquals(true, $optionReturnerValidator->checkKeyForRolesProperty($optionReturner, 1));
-        $this->assertEquals(false, $optionReturnerValidator->checkKeyForRolesProperty($optionReturner, 89));
+        $this->assertEquals(true, $optionReturnerValidator->checkRolesPropertyForKey($optionReturner, 1));
+        $this->assertEquals(false, $optionReturnerValidator->checkRolesPropertyForKey($optionReturner, 89));
     }
 
     public function test_optionReturnerValidator_checkKeyForIndustries_method_returns_if_key_exists_on_industries_property()
@@ -46,8 +46,8 @@ class OptionReturnerValidatorTest extends \PHPUnit_Framework_TestCase {
 
         $optionReturnerValidator = new OptionReturnerValidator();
 
-        $this->assertEquals(true, $optionReturnerValidator->checkKeyForIndustriesProperty($optionReturner, 1));
-        $this->assertEquals(false, $optionReturnerValidator->checkKeyForIndustriesProperty($optionReturner, 89));
+        $this->assertEquals(true, $optionReturnerValidator->checkIndustriesPropertyForKey($optionReturner, 1));
+        $this->assertEquals(false, $optionReturnerValidator->checkIndustriesPropertyForKey($optionReturner, 89));
     }
 
     public function test_optionReturnerValidator_checkKeyForContactRelations_method_returns_if_key_exists_on_ContactRelations_property()
@@ -56,8 +56,8 @@ class OptionReturnerValidatorTest extends \PHPUnit_Framework_TestCase {
 
         $optionReturnerValidator = new OptionReturnerValidator();
 
-        $this->assertEquals(true, $optionReturnerValidator->checkKeyForContactRelationsProperty($optionReturner, 1));
-        $this->assertEquals(false, $optionReturnerValidator->checkKeyForContactRelationsProperty($optionReturner, 89));
+        $this->assertEquals(true, $optionReturnerValidator->checkContactRelationsPropertyForKey($optionReturner, 1));
+        $this->assertEquals(false, $optionReturnerValidator->checkContactRelationsPropertyForKey($optionReturner, 89));
     }
 
     public function test_optionReturnerValidator_getAllowedProperty_method_will_throw_error_if_bad_argument_is_supplied()

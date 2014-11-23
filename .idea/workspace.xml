@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInvoker.php" afterPath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInvoker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturner.php" afterPath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerCommandController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerCommandControllerTest.php" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerCommandControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerValidatorTest.php" afterPath="$PROJECT_DIR$/tests/OptionReturner/OptionReturnerValidatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OptionReturnerInvoker.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInvoker.php">
+      <file leaf-file-name="OptionReturnerCommandController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerCommandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4100718" vertical-offset="0" max-vertical-offset="2050">
-              <caret line="72" column="100" selection-start-line="72" selection-start-column="100" selection-end-line="72" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.32374102" vertical-offset="300" max-vertical-offset="1575">
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -162,10 +167,6 @@
               <option name="myItemId" value="MyStuff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Polymorphic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -252,6 +253,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -262,7 +264,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -296,18 +297,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="1450">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -317,18 +318,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="775">
           <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
           <folding>
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -347,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInternalService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877698" vertical-offset="0" max-vertical-offset="695">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.352518" vertical-offset="455" max-vertical-offset="1150">
@@ -361,24 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerCommandControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2949641" vertical-offset="0" max-vertical-offset="1175">
-          <caret line="41" column="101" selection-start-line="41" selection-start-column="101" selection-end-line="41" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerInvokerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7553957" vertical-offset="1175" max-vertical-offset="1950">
           <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35971224" vertical-offset="0" max-vertical-offset="695">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -403,86 +383,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php">
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64748204" vertical-offset="0" max-vertical-offset="695">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerValidatorTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24460432" vertical-offset="1355" max-vertical-offset="2050">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416783730000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416783730000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0215828" vertical-offset="0" max-vertical-offset="2425">
-          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
-          <folding>
-            <marker date="1416784312000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Roles in application ..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Industries in application ..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Contact Relations in application ..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784312000" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerCommandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8633093" vertical-offset="150" max-vertical-offset="950">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.35971224" vertical-offset="0" max-vertical-offset="695">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding>
             <marker date="1416626076000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
             <marker date="1416626076000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416626076000" expanded="true" signature="-1:-1" placeholder=" Returns a new OptionReturner instance ..." />
+            <marker date="1416626076000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerValidator.php">
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInternalService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.76258993" vertical-offset="1180" max-vertical-offset="2275">
-          <caret line="32" column="89" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.2877698" vertical-offset="0" max-vertical-offset="695">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <marker date="1416784021000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1416784021000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Reference for the current properties on the OptionReturner class ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Checks if key passed in is available in the properties on the OptionReturner class ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Gets the correct property referenced in the argument (key) or throws an error ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'roles' property of the OptionReturner class ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'industries' property of the OptionReturner class ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'contactRelations' property of the OptionReturner class ..." />
-            <marker date="1416784021000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416626076000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416626076000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -498,10 +418,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64748204" vertical-offset="0" max-vertical-offset="695">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <marker date="1416778786000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416778786000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416778786000" expanded="true" signature="-1:-1" placeholder=" Checks if key exists in a property array on an object ..." />
+            <marker date="1416778786000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerValidatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64316547" vertical-offset="1253" max-vertical-offset="2050">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.877698" vertical-offset="0" max-vertical-offset="2275">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding>
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416784965000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Reference for the current properties on the OptionReturner class ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Checks if key passed in is available in the properties on the OptionReturner class ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Gets the correct property referenced in the argument (key) or throws an error ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'roles' property of the OptionReturner class ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'industries' property of the OptionReturner class ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder=" Checks if the passed in key is present on the 'contactRelations' property of the OptionReturner class ..." />
+            <marker date="1416784965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07194245" vertical-offset="200" max-vertical-offset="2500">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <marker date="1416785334000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Roles in application ..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Industries in application ..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder=" The values acceptable for Contact Relations in application ..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416785334000" expanded="true" signature="-1:-1" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerInvoker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.4100718" vertical-offset="0" max-vertical-offset="2050">
           <caret line="72" column="100" selection-start-line="72" selection-start-column="100" selection-end-line="72" selection-end-column="100" />
+          <folding>
+            <marker date="1416784671000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns all values stored in Roles property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns a specific value stored in Roles property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns all values stored in Industries property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns a specific value stored in the Industries property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns all values stored in the contactRelations property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder=" Returns a specific value stored in the contactRelations property on a OptionReturner resource ..." />
+            <marker date="1416784671000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/OptionReturner/OptionReturnerCommandControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5683453" vertical-offset="80" max-vertical-offset="1300">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <marker date="1416785752000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416785752000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/OptionReturner/OptionReturnerCommandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32374102" vertical-offset="300" max-vertical-offset="1575">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>

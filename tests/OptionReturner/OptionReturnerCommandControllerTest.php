@@ -9,37 +9,42 @@
 namespace tests\OptionReturner;
 
 
+use App\MyStuff\OptionReturner\OptionReturnerCommandController;
+
 class OptionReturnerCommandControllerTest extends \PHPUnit_Framework_TestCase {
 
-    //return all roles
-    public function test_OptionReturnerCC_retrieveAllRoles_method_returns_all_roles()
-    {
 
+    public function test_OptionReturnerCC_getAllRoles_method_returns_all_roles()
+    {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
+
+        $this->assertEquals(true, is_array($optionReturnerCmmdCtrl->getAllRoles()));
+        $this->assertEquals('Customer Support', $optionReturnerCmmdCtrl->getAllRoles()[0]);
     }
 
-    //return specific roles
-    public function test_OptionReturnerCC_retrieveSpecificRole_method_returns_a_specific_role()
+
+    public function test_OptionReturnerCC_getSpecificRole_method_returns_a_specific_role()
     {
 
     }
 
     //return all industries
-    public function test_OptionReturnerCC_retrieveAllIndustries_method_returns_all_industries()
+    public function test_OptionReturnerCC_getAllIndustries_method_returns_all_industries()
     {
 
     }
     //return specific industry
-    public function test_OptionReturnerCC_retrieveSpecificIndustry_method_returns_a_specific_industry()
+    public function test_OptionReturnerCC_getSpecificIndustry_method_returns_a_specific_industry()
     {
 
     }
     //return all contact relations
-    public function test_OptionReturnerCC_retrieveAllRelations_method_returns_all_relations()
+    public function test_OptionReturnerCC_getAllRelations_method_returns_all_relations()
     {
 
     }
     //return specific contact relation
-    public function test_OptionReturnerCC_retrieveSpecificRelation_method_returns_a_specific_relation()
+    public function test_OptionReturnerCC_getSpecificRelation_method_returns_a_specific_relation()
     {
 
     }

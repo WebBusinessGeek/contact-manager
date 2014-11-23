@@ -13,9 +13,11 @@ class OptionReturner {
 
     //**** remember to add any new group of options
     //1. Add a new public property array below
-    //2. Add the group to the OptionReturnerValidator->allowProperties property
-    //3. Create all necessary get/set/group specific methods in all classes
-    //4. Backup with tests
+    //2. Add the new group to the OptionReturnerValidator->allowProperties property
+    //3. Add getAll and getSpecific methods in OptionReturnerInvoker class
+    //4. Add getAll and getSpecific methods in OptionReturnerCommandController class
+    //5. Should be building with tests first - but if not, back up with tests!!!
+
 
     /**
      * The values acceptable for Roles in application
@@ -91,7 +93,8 @@ class OptionReturner {
     //**** remember to add any new group of options
     //1. Add a new public property array below
     //2. Add the group to the OptionReturnerValidator->allowProperties property
-    //3. Create all necessary get/set/group specific methods in all classes
-    //4. Backup with tests
+    //3. Add getAll and getSpecific methods in OptionReturnerInvoker class
+    //4. Add getAll and getSpecific methods in OptionReturnerCommandController class
+    //5. Should be building with tests first - but if not, back up with tests!!!
 
 }
