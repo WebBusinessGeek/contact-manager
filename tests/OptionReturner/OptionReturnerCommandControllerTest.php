@@ -38,21 +38,39 @@ class OptionReturnerCommandControllerTest extends \PHPUnit_Framework_TestCase {
     //return all industries
     public function test_OptionReturnerCC_getAllIndustries_method_returns_all_industries()
     {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
 
+        $this->assertEquals(true, is_array($optionReturnerCmmdCtrl->getAllIndustries()));
+        $this->assertEquals('Agriculture', $optionReturnerCmmdCtrl->getAllIndustries()[0]);
     }
     //return specific industry
     public function test_OptionReturnerCC_getSpecificIndustry_method_returns_a_specific_industry()
     {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
 
+        $this->assertEquals('Agriculture', $optionReturnerCmmdCtrl->getSpecificIndustry(1));
+
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+
+        $optionReturnerCmmdCtrl->getSpecificIndustry(20);
     }
-    //return all contact relations
+
     public function test_OptionReturnerCC_getAllRelations_method_returns_all_relations()
     {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
 
+        $this->assertEquals(true, is_array($optionReturnerCmmdCtrl->getAllContactRelations()));
+        $this->assertEquals('Freelancer', $optionReturnerCmmdCtrl->getAllContactRelations()[0]);
     }
-    //return specific contact relation
+
     public function test_OptionReturnerCC_getSpecificRelation_method_returns_a_specific_relation()
     {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
 
+        $this->assertEquals('Freelancer', $optionReturnerCmmdCtrl->getSpecificContactRelation(1));
+
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+
+        $optionReturnerCmmdCtrl->getSpecificContactRelation(20);
     }
 }

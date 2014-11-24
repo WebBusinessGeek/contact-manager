@@ -40,10 +40,12 @@ class OptionReturnerCommandController {
 
     }
 
-    //return specific roles
-        //validator - checkRolesPropertyForKey
-        //factory - get resource
-        //invoker - call for retrieval (argument) => key
+
+    /**
+     * Returns a specific role from the OptionReturner class or throws an InvalidArgumentException error
+     * @param $key
+     * @return mixed|void
+     */
     public function getSpecificRole($key)
     {
         $optionReturner = $this->factory->createNewOptionReturner();
@@ -54,22 +56,52 @@ class OptionReturnerCommandController {
 
     }
 
-    //return all industries
-        //factory - get resource
-        //invoker - call for retrieval
+    /**
+     * Get all industries from the OptionReturner class
+     * @return array
+     */
+    public function getAllIndustries()
+    {
+        return $this->invoker->getAllIndustries($this->factory->createNewOptionReturner());
+    }
 
-    //return specific industry
-        //validator - checkRolesPropertyForKey
-        //factory - get resource
-        //invoker - call for retrieval (argument) => key
+    /**
+     * Returns a specific industry from the OptionReturner class or throws an InvalidArgumentException error
+     * @param $key
+     * @return mixed|void
+     */
+    public function getSpecificIndustry($key)
+    {
+        $optionReturner = $this->factory->createNewOptionReturner();
 
-    //return all contact relations
-        //factory - get resource
-        //invoker - call for retrieval
+        return ($this->validator->checkIndustriesPropertyForKey($optionReturner, $key))
+            ? $this->invoker->getSpecificIndustry($optionReturner, $key)
+            : $this->responder->throwBadKeyException();
 
-    //return specific contact relation
-        //validator - checkRolesPropertyForKey
-        //factory - get resource
-        //invoker - call for retrieval (argument) => key
+    }
+
+    /**
+     * Get all contactRelations from the OptionReturner class
+     * @return array
+     */
+    public function getAllContactRelations()
+    {
+        return $this->invoker->getAllContactRelations($this->factory->createNewOptionReturner());
+    }
+
+    /**
+     * Returns a specific conactRelation from the OptionReturner class or throws an InvalidArgumentException error
+     * @param $key
+     * @return mixed|void
+     */
+    public function getSpecificContactRelation($key)
+    {
+        $optionReturner = $this->factory->createNewOptionReturner();
+
+        return ($this->validator->checkContactRelationsPropertyForKey($optionReturner, $key))
+            ? $this->invoker->getSpecificContactRelation($optionReturner, $key)
+            : $this->responder->throwBadKeyException();
+
+    }
 
 }
