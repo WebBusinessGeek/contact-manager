@@ -33,7 +33,11 @@ class OptionReturnerInternalServiceTest extends \PHPUnit_Framework_TestCase {
 
     public function test_OptionReturnerInternalService_getSpecificRole_gets_a_specific_role_from_OptionReturner_class()
     {
+        $optionReturnerInternalService = new OptionReturnerInternalService();
+        $this->assertEquals('Customer Support', $optionReturnerInternalService->getSpecificRole(1));
 
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+        $optionReturnerInternalService->getSpecificRole(20);
     }
 
     public function test_OptionReturnerInternalService_getAllIndustries_gets_all_values_for_industries_on_OptionReturner_class()
@@ -45,7 +49,11 @@ class OptionReturnerInternalServiceTest extends \PHPUnit_Framework_TestCase {
 
     public function test_OptionReturnerInternalService_getSpecificIndustry_gets_a_specific_industry_from_OptionReturner_class()
     {
+        $optionReturnerInternalService = new OptionReturnerInternalService();
+        $this->assertEquals('Agriculture', $optionReturnerInternalService->getSpecificIndustry(1));
 
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+        $optionReturnerInternalService->getSpecificIndustry(90);
     }
 
     public function test_OptionReturnerInternalService_getAllContactRelations_gets_all_values_for_contactRelations_on_OptionReturner_class()
@@ -57,7 +65,11 @@ class OptionReturnerInternalServiceTest extends \PHPUnit_Framework_TestCase {
 
     public function test_OptionReturnerInternalService_getSpecificContactRelation_gets_a_specific_contactRelation_from_OptionReturner_class()
     {
+        $optionReturnerInternalService = new OptionReturnerInternalService();
+        $this->assertEquals('Freelancer', $optionReturnerInternalService->getSpecificContactRelation(1));
 
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+        $optionReturnerInternalService->getSpecificContactRelation(90);
     }
 
 
