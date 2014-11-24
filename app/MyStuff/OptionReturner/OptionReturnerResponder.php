@@ -10,9 +10,15 @@ namespace App\MyStuff\OptionReturner;
 
 
 use App\MyStuff\Polymorphic\ResponderTrait;
+use Psr\Log\InvalidArgumentException;
 
 class OptionReturnerResponder {
 
     use ResponderTrait;
+
+    public function throwBadKeyException()
+    {
+        throw new InvalidArgumentException('Key not found on property.');
+    }
 
 }

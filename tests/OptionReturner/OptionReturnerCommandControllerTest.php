@@ -25,6 +25,13 @@ class OptionReturnerCommandControllerTest extends \PHPUnit_Framework_TestCase {
 
     public function test_OptionReturnerCC_getSpecificRole_method_returns_a_specific_role()
     {
+        $optionReturnerCmmdCtrl = new OptionReturnerCommandController();
+
+        $this->assertEquals('Customer Support', $optionReturnerCmmdCtrl->getSpecificRole(1));
+
+        $this->setExpectedException('InvalidArgumentException', 'Key not found on property');
+
+        $optionReturnerCmmdCtrl->getSpecificRole(20);
 
     }
 

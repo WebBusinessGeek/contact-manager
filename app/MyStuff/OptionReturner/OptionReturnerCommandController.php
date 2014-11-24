@@ -9,6 +9,8 @@
 namespace App\MyStuff\OptionReturner;
 
 
+use Psr\Log\InvalidArgumentException;
+
 class OptionReturnerCommandController {
 
     public $factory;
@@ -28,9 +30,10 @@ class OptionReturnerCommandController {
     }
 
 
-    //return all roles
-        //factory - get resource
-        //invoker - call for retrieval
+    /**
+     * Get all roles available on the OptionReturner class
+     * @return mixed
+     */
     public function getAllRoles()
     {
        return $this->invoker->getAllRoles($this->factory->createNewOptionReturner());
@@ -41,6 +44,15 @@ class OptionReturnerCommandController {
         //validator - checkRolesPropertyForKey
         //factory - get resource
         //invoker - call for retrieval (argument) => key
+    public function getSpecificRole($key)
+    {
+        $optionReturner = $this->factory->createNewOptionReturner();
+
+        return ($this->validator->checkRolesPropertyForKey($optionReturner, $key))
+            ? $this->invoker->getSpecificRole($optionReturner, $key)
+            : $this->responder->throwBadKeyException();
+
+    }
 
     //return all industries
         //factory - get resource
