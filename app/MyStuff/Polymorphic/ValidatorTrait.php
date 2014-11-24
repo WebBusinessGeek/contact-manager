@@ -9,6 +9,8 @@
 namespace App\MyStuff\Polymorphic;
 
 
+use Psr\Log\InvalidArgumentException;
+
 trait ValidatorTrait {
 
     /**
@@ -21,6 +23,16 @@ trait ValidatorTrait {
     public function keyExistsInPropertyArray($classInstance, $propertyToCheck, $key)
     {
         return array_key_exists($key, $classInstance->$propertyToCheck);
+    }
+
+
+    public function checkIfKeyIsGreaterThanZero($key)
+    {
+        if($key < 1)
+        {
+            throw new InvalidArgumentException('Key must be greater than zero');
+        }
+        return true;
     }
 
 }

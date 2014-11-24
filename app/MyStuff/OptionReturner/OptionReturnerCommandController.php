@@ -36,6 +36,7 @@ class OptionReturnerCommandController {
      */
     public function getAllRoles()
     {
+
        return $this->invoker->getAllRoles($this->factory->createNewOptionReturner());
 
     }
@@ -48,6 +49,13 @@ class OptionReturnerCommandController {
      */
     public function getSpecificRole($key)
     {
+        $validator = $this->validator->checkIfKeyIsGreaterThanZero($key);
+
+        if($validator != true)
+        {
+            return $validator;
+        }
+
         $optionReturner = $this->factory->createNewOptionReturner();
 
         return ($this->validator->checkRolesPropertyForKey($optionReturner, $key))
@@ -72,6 +80,13 @@ class OptionReturnerCommandController {
      */
     public function getSpecificIndustry($key)
     {
+        $validator = $this->validator->checkIfKeyIsGreaterThanZero($key);
+
+        if($validator != true)
+        {
+            return $validator;
+        }
+
         $optionReturner = $this->factory->createNewOptionReturner();
 
         return ($this->validator->checkIndustriesPropertyForKey($optionReturner, $key))
@@ -90,12 +105,19 @@ class OptionReturnerCommandController {
     }
 
     /**
-     * Returns a specific conactRelation from the OptionReturner class or throws an InvalidArgumentException error
+     * Returns a specific contactRelation from the OptionReturner class or throws an InvalidArgumentException error
      * @param $key
      * @return mixed|void
      */
     public function getSpecificContactRelation($key)
     {
+        $validator = $this->validator->checkIfKeyIsGreaterThanZero($key);
+
+        if($validator != true)
+        {
+            return $validator;
+        }
+
         $optionReturner = $this->factory->createNewOptionReturner();
 
         return ($this->validator->checkContactRelationsPropertyForKey($optionReturner, $key))

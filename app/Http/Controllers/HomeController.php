@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use App\MyStuff\OptionReturner\OptionReturnerCommandController;
+
 class HomeController extends Controller {
 
 	/*
@@ -17,7 +19,8 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-		return view('hello');
+		$optioncmmdctrl = new OptionReturnerCommandController();
+		return ($optioncmmdctrl->getSpecificRole(1));
 	}
 
 }
