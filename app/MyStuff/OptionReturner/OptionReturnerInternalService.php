@@ -9,7 +9,7 @@
 namespace App\MyStuff\OptionReturner;
 
 
-class OptionReturnerInternalService {
+class OptionReturnerInternalService implements OptionReturnerInternalServiceInterface {
 
     /**
      * The commandController for clean calls to the underlying classes
