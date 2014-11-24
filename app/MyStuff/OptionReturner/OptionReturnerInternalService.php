@@ -53,31 +53,58 @@ class OptionReturnerInternalService {
         return $everything;
     }
 
+    /**
+     * Return all roles on OptionReturner class
+     * @return mixed
+     */
     public function getAllRoles()
     {
        return $this->commandController->getAllRoles();
     }
 
+    /**
+     * Return specific role on OptionReturner class or throw an error
+     * @param $key
+     * @return mixed|void
+     */
     public function getSpecificRole($key)
     {
        return $this->commandController->getSpecificRole($key);
     }
 
+    /**
+     * Return all industries on OptionReturner class
+     * @return array
+     */
     public function getAllIndustries()
     {
         return $this->commandController->getAllIndustries();
     }
 
+    /**
+     * Return specific industry on OptionReturner class or throw an error
+     * @param $key
+     * @return mixed|void
+     */
     public function getSpecificIndustry($key)
     {
         return $this->commandController->getSpecificIndustry($key);
     }
 
+    /**
+     * Return all contactRelations on OptionReturner class
+     * @return array
+     */
     public function getAllContactRelations()
     {
         return $this->commandController->getAllContactRelations();
     }
 
+    /**
+     * Return specific contactRelation on OptionReturner class or throw an error
+     * @param $key
+     * @return mixed|void
+     */
     public function getSpecificContactRelation($key)
     {
         return $this->commandController->getSpecificContactRelation($key);
