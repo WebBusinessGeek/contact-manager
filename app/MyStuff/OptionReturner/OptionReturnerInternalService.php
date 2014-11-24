@@ -30,7 +30,7 @@ class OptionReturnerInternalService {
         'ContactRelations'
     ];
 
-   
+
     function __construct()
     {
         $this->commandController = new OptionReturnerCommandController();
@@ -53,7 +53,35 @@ class OptionReturnerInternalService {
         return $everything;
     }
 
+    public function getAllRoles()
+    {
+       return $this->commandController->getAllRoles();
+    }
 
+    public function getSpecificRole($key)
+    {
+       return $this->commandController->getSpecificRole($key);
+    }
+
+    public function getAllIndustries()
+    {
+        return $this->commandController->getAllIndustries();
+    }
+
+    public function getSpecificIndustry($key)
+    {
+        return $this->commandController->getSpecificIndustry($key);
+    }
+
+    public function getAllContactRelations()
+    {
+        return $this->commandController->getAllContactRelations();
+    }
+
+    public function getSpecificContactRelation($key)
+    {
+        return $this->commandController->getSpecificContactRelation($key);
+    }
 
 
 
