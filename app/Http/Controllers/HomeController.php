@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\MyStuff\OptionReturner\OptionReturnerCommandController;
+use App\MyStuff\OptionReturner\OptionReturnerInternalService;
 
 class HomeController extends Controller {
 
@@ -19,8 +20,8 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-		$optioncmmdctrl = new OptionReturnerCommandController();
-		return ($optioncmmdctrl->getSpecificRole(1));
+		$optioncmmdctrl = new OptionReturnerInternalService();
+		return $optioncmmdctrl->getEverything()[0][0];
 	}
 
 }

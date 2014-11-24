@@ -16,7 +16,8 @@ class OptionReturner {
     //2. Add the new group to the OptionReturnerValidator->allowProperties property
     //3. Add getAll and getSpecific methods in OptionReturnerInvoker class
     //4. Add getAll and getSpecific methods in OptionReturnerCommandController class
-    //5. Should be building with tests first - but if not, back up with tests!!!
+    //5. Add to options array on OptionReturnerInternalService class
+    //6. Should be building with tests first - but if not, back up with tests!!!
 
 
     /**
@@ -95,6 +96,7 @@ class OptionReturner {
     //2. Add the group to the OptionReturnerValidator->allowProperties property
     //3. Add getAll and getSpecific methods in OptionReturnerInvoker class
     //4. Add getAll and getSpecific methods in OptionReturnerCommandController class
-    //5. Should be building with tests first - but if not, back up with tests!!!
+    //5. Add to options array on OptionReturnerInternalService class
+    //6. Should be building with tests first - but if not, back up with tests!!!
 
 }
