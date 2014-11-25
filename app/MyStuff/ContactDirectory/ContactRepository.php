@@ -9,6 +9,27 @@
 namespace App\MyStuff\ContactDirectory;
 
 
+use Illuminate\Database\DatabaseManager as DB;
+
 class ContactRepository {
+
+
+    public function getAllContactsInAccount($account_id)
+    {
+        $contacts = Contact::where('contactAccount_id', '=', $account_id)->get();
+
+        return $contacts;
+    }
+
+
+    public function getSpecificContactInAccount($account_id, $contact_id)
+    {
+
+    }
+
+    public function storeContactInAccount($account_id, Contact $contact)
+    {
+
+    }
 
 }

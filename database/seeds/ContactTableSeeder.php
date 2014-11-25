@@ -8,6 +8,7 @@
 
 use Faker\Factory as Faker;
 use App\MyStuff\ContactDirectory\Contact as Contact;
+use Illuminate\Database\DatabaseManager as DB;
 
 
 class ContactTableSeeder extends \Illuminate\Database\Seeder {

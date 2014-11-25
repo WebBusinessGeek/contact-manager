@@ -17,7 +17,7 @@ return [
 	| choice installed on your machine before you begin development.
 	|
 	*/
-	//'driver' => 'mysql',
+	'default' => 'mysql',
 
 	'connections' => [
 

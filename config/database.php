@@ -54,13 +54,15 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => '127.0.0.1', //use 'localhost' via vagrant
 			'database'  => 'contactmgr',
 			'username'  => 'homestead',
 			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+			'port' => '33060'
+
 		],
 
 		'pgsql' => [
