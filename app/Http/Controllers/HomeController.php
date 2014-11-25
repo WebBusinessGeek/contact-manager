@@ -26,14 +26,9 @@ class HomeController extends Controller {
 
 //		$contactRepo = new ContactRepository();
 //
-//		$contacts = $contactRepo->getAllContactsInAccount(2);
+//		$contact = $contactRepo->getAllContactsInAccount(1)[0];
 //
-//		$contactids = [];
-//		foreach($contacts as $contact)
-//		{
-//			$contactids[] = $contact->id;
-//		}
-//		return $contactids;
+//		dd($contact);
 
 
 

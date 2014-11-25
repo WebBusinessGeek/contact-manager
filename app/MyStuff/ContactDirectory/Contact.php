@@ -16,4 +16,6 @@ class Contact extends Model {
     protected $table = 'contacts';
 
 
+
+
 }

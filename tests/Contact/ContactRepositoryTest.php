@@ -21,6 +21,9 @@ class ContactRepositoryTest extends  \TestCase{
 
         $this->assertEquals('App\MyStuff\ContactDirectory\Contact', get_class($contactRepo->getAllContactsInAccount(1)[0]));
 
+        $contact = $contactRepo->getAllContactsInAccount(1)[0];
+        $this->assertEquals(1, $contact->contactAccount_id);
+
     }
 
 
