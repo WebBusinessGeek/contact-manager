@@ -54,7 +54,7 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      => '127.0.0.1', //use 'localhost' via vagrant
+			'host'      => '127.0.0.1', //use 'localhost' via vagrant && '127.0.0.1' via testing
 			'database'  => 'contactmgr',
 			'username'  => 'homestead',
 			'password'  => 'secret',

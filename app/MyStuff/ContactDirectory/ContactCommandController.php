@@ -18,7 +18,7 @@ class ContactCommandController {
             //if no
                 //return $this->responder->InstanceNotFound()
             //if yes
-                //return $this->repository->getAllContactsInAccount($account_id)
+                //return $this->repository->getAllContactsInAccount($account_id)DONE
 
         //should i check if any contacts were returned?
 

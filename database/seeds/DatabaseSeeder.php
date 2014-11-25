@@ -12,11 +12,13 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-
 		Model::unguard();
 
 		$this->call('ContactTableSeeder');
 		$this->command->info('Contact table seeded!');
+
+		$this->call('ContactAccountTableSeeder');
+		$this->command->info('contactAccount table seeded!');
 	}
 
 }
