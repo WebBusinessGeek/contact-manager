@@ -12,15 +12,23 @@ namespace App\MyStuff\ContactDirectory;
 class ContactCommandController {
 
 
+    public $repository;
+
+    public $responder;
+
+    function __construct()
+    {
+        $this->repository = new ContactRepository();
+
+        $this->responder = new ContactResponder();
+    }
+
+
     public function index($account_id)
     {
-        //$this->validator->checkIfInstanceExists($account_id)
-            //if no
-                //return $this->responder->InstanceNotFound()
-            //if yes
-                //return $this->repository->getAllContactsInAccount($account_id)DONE
+        $contacts = $this->repository->getAllContactsInAccount($account_id);
 
-        //should i check if any contacts were returned?
+        return (count($contacts) < 1) ? $this->responder->sendMessage('No contacts') : $contacts;
 
     }
 

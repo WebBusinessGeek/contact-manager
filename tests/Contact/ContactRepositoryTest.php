@@ -24,6 +24,7 @@ class ContactRepositoryTest extends  \TestCase{
         $contact = $contactRepo->getAllContactsInAccount(1)[0];
         $this->assertEquals(1, $contact->contactAccount_id);
 
+        $this->assertEquals(0, count($contactRepo->getAllContactsInAccount('a')));
     }
 
 

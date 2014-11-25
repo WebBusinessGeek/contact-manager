@@ -9,6 +9,10 @@
 namespace App\MyStuff\ContactDirectory;
 
 
+use App\MyStuff\Polymorphic\ResponderTrait;
+
 class ContactResponder {
+
+    use ResponderTrait;
 
 }

@@ -11,4 +11,6 @@ namespace App\MyStuff\ContactDirectory;
 
 class ContactValidator {
 
+
+
 }
