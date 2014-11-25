@@ -17,13 +17,14 @@ return [
 	| choice installed on your machine before you begin development.
 	|
 	*/
+	//'driver' => 'mysql',
 
 	'connections' => [
 
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'homestead',
+			'database'  => 'contactmgr',
 			'username'  => 'homestead',
 			'password'  => 'secret',
 			'charset'   => 'utf8',
