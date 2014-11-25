@@ -24,6 +24,8 @@ class CreateContactsTable extends Migration {
 			$table->string('title', 60)->nullable();
 			$table->string('website', 100)->nullable();
 			$table->string('company', 60)->nullable();
+			$table->timestamp('updated_at');
+			$table->timestamp('created_at');
 		});
 	}
 
