@@ -23,12 +23,12 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-
+//
 //		$contactRepo = new ContactRepository();
 //
-//		$contact = $contactRepo->getAllContactsInAccount('a');
+//		$contact = $contactRepo->getContactByName(3, 'Gwendolyn Rice');
 //
-//		dd(count($contact));
+//		dd($contact);
 
 
 

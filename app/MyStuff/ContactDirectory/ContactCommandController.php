@@ -45,9 +45,9 @@ class ContactCommandController {
     {
         //$this->validator->isValidAll($email, $url, $phoneNumber)
                 //if yes
-                    //$contact = $this->factory->createNewContact(); DONE
-                    //$this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
-                    //$this->repository->storeContactInAccount($account_id, $contact)
+                    //DONE - $contact = $this->factory->createNewContact();
+                    //DONE - $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
+                    // WORKING - $this->repository->storeContactInAccount($account_id, $contact)
                     //$this->responder->sendMessage('Stored')
                 //if no
                     //$this->responder->('Bad format for email, phone number, or url')

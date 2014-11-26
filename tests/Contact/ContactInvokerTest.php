@@ -25,7 +25,7 @@ class ContactInvokerTest extends \TestCase {
 
         $this->assertEquals('ContactName', $contact->name);
         $this->assertEquals('Contact@contact.com', $contact->email);
-        $this->assertEquals('215-555-4444', $contact->phoneNumber);
+        $this->assertEquals('215-555-4444', $contact->phone_number);
         $this->assertEquals('Agriculture', $contact->industry);
         $this->assertEquals('Customer Support', $contact->role);
         $this->assertEquals('Freelancer', $contact->contactRelation);

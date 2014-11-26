@@ -30,7 +30,7 @@ class ContactInvoker {
         $attributes = [
             'name' => $name,
             'email'=> $email,
-            'phoneNumber' => $phoneNumber,
+            'phone_number' => $phoneNumber,
             'industry' => $industry,
             'role' => $role,
             'contactRelation' => $contactRelation,

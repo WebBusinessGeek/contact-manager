@@ -29,7 +29,16 @@ class ContactRepository {
 
     public function storeContactInAccount($account_id, Contact $contact)
     {
+        $contact->contactAccount_id = $account_id;
 
+        $contact->save();
+    }
+
+    public function getContactByName($account_id, $name)
+    {
+        $contact = Contact::where('contactAccount_id', '=', $account_id)->where('name', '=', $name)->first();
+
+        return $contact;
     }
 
 }
