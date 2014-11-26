@@ -103,18 +103,53 @@ class ContactValidatorTest extends \PHPUnit_Framework_TestCase {
     {
         $contactValidator = new ContactValidator();
 
-        $validAttributes = [];
+        $validAttributes = [
+            'name' => 'SomeName',
+            'email' => 'email@email.com',
+            'phone_number' => '215-255-2555',
+            'industry' => 'Agriculture',
+            'role' => 'Customer Support',
+            'contactRelation' => 'Freelancer',
+            'company' => null,
+            'title' => null,
+            'website' => null,
+        ];
 
-        $invalidAttributes = [];
+        $invalidAttributes = [
+            'name' => 'SomeName',
+            'email' => 'email@email.com',
+            'phone_number' => '215-255-2555',
+            'industry' => 'Agriculture',
+        ];
 
-        $invalidAttributes2 = [];
+        $invalidAttributes2 = [
+            'name' => 'SomeName',
+            'email' => null,
+            'phone_number' => '215-255-2555',
+            'industry' => 'Agriculture',
+            'role' => 'Customer Support',
+            'contactRelation' => 'Freelancer',
+            'company' => null,
+            'title' => null,
+            'website' => null,
+        ];
 
-        $invalidAttributes3 = [];
+        $invalidAttributes3 = [
+            'name' => null,
+            'email' => 'email@email.com',
+            'phone_number' => '215-255-2555',
+            'industry' => 'Agriculture',
+            'role' => 'Customer Support',
+            'contactRelation' => 'Freelancer',
+            'company' => null,
+            'title' => null,
+            'website' => null,
+        ];
 
-        $this->assertEquals(true, $contactValidator->isValidAttriutes($validAttributes));
-        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes));
-        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes2));
-        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes3));
+        $this->assertEquals(true, $contactValidator->isValidAttributes($validAttributes));
+        $this->assertEquals(false, $contactValidator->isValidAttributes($invalidAttributes));
+        $this->assertEquals(false, $contactValidator->isValidAttributes($invalidAttributes2));
+        $this->assertEquals(false, $contactValidator->isValidAttributes($invalidAttributes3));
     }
 
 

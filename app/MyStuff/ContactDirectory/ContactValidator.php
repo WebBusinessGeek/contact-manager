@@ -23,9 +23,14 @@ class ContactValidator {
             : $this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck);
     }
 //$this->validator->isValidAttributes($newAttributes)  WORKING
-    public function isValidAttriutes($newAttributes = array())
+    public function isValidAttributes($newAttributes = array())
     {
 
+        //make sure all attribute keys are present
+
+        //make sure UNnullable attributes are not null
+
+        
     }
 
 
