@@ -23,4 +23,9 @@ class ContactCommandControllerTest extends \TestCase {
         $this->assertEquals('No contacts', $contactCmmdCtrl->index('a'));
     }
 
+    public function test_ContactcommandController_store_method_stores_a_new_resource_in_contacts_table()
+    {
+
+    }
+
 }

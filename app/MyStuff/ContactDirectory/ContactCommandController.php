@@ -31,6 +31,8 @@ class ContactCommandController {
 
         $this->validator = new ContactValidator();
 
+        $this->invoker = new ContactInvoker();
+
     }
 
 
@@ -43,14 +45,17 @@ class ContactCommandController {
 
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-        // WORKING $this->validator->isValidAll($emailDONE, $urlDONE, $phoneNumberDONE)
-                //if yes
-                    //DONE - $contact = $this->factory->createNewContact();
-                    //DONE - $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
-                    // DONE - $this->repository->storeContactInAccount($account_id, $contact)
-                    // DONE $this->responder->sendMessage('Stored')
-                //if no
-                    // DONE $this->responder->('Bad format for email, phone number, or url')
+//       if ($this->validator->isValidAll($email, $phoneNumber, $website) == true)
+//       {
+//           $contact = $this->factory->createNewContact();
+//
+//           $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website);
+//
+//           $this->repository->storeContactInAccount($account_id, $contact);
+//
+//           return $this->responder->sendMessage('Stored');
+//       }
+//        return $this->responder->sendMessage('Bad format for email, phone number, or url');
     }
 
     public function update()
