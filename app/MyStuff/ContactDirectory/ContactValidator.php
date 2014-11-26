@@ -22,6 +22,11 @@ class ContactValidator {
             ? $this->isValidNumberEmailAndUrl($emailToCheck, $phoneNumberToCheck, $urlToCheck)
             : $this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck);
     }
+//$this->validator->isValidAttributes($newAttributes)  WORKING
+    public function isValidAttriutes($newAttributes = array())
+    {
+
+    }
 
 
 }

@@ -99,6 +99,25 @@ class ContactValidatorTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(true, $contactValidator->isValidAll($validGroup1[0], $validGroup1[2]));
     }
 
+    public function test_ContactValidator_isValidAttributes_returns_if_valid_attributes_were_passed()
+    {
+        $contactValidator = new ContactValidator();
+
+        $validAttributes = [];
+
+        $invalidAttributes = [];
+
+        $invalidAttributes2 = [];
+
+        $invalidAttributes3 = [];
+
+        $this->assertEquals(true, $contactValidator->isValidAttriutes($validAttributes));
+        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes));
+        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes2));
+        $this->assertEquals(false, $contactValidator->isValidAttriutes($invalidAttributes3));
+    }
+
+
 
 
 }

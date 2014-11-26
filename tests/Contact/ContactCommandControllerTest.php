@@ -61,4 +61,15 @@ class ContactCommandControllerTest extends \TestCase {
 
     }
 
+    public function test_ContactCommandController_update_method_updates_a_specified_contact_resource()
+    {
+//        $contactWithId1 = $contactCmmdCtrl->show(1);
+//        $contactWithId2 = $contactCmmdCtrl->show(2);
+//
+//        $this->assertEquals(1, $contactWithId1->id);
+//        $this->assertEquals(2, $contactWithId2->id);
+
+
+    }
+
 }

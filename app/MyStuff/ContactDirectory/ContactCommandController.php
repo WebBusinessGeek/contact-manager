@@ -76,9 +76,25 @@ class ContactCommandController {
 
     }
 
-    public function update()
+    public function update($id, $newAttributes = array())
     {
+        /*
+        CONDITION : $this->validator->isValidAttributes($newAttributes)  WORKING
+            - if yes
+                - $contact = $this->show($id) DONE
+                CONDITION : check if contact was returned
+                    - if yes
+                        - $this->invoker->updateContact($contact, $newAttributes)  NOTDONE
+                        - $ths->repository->softSave($contact) NOTDONE
+                        - return $this->responder('Updated') DONE
+                    - if no
+                        - return $this->responder('No contact by that id'); DONE
+            - if no
+                - return $this->responder('Invalid Arguments') DONE
 
+        return CONTACT or 'Invalid Argument'//checkAttributesBeforeShow  NOTDONE
+        return Updated or 'No contact by that id' //checkContactUpdateable  NOTDONE
+         */
     }
 
     public function destroy()
