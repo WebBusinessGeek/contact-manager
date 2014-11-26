@@ -45,9 +45,9 @@ trait ValidatorTrait {
 
     }
 
-    public function isValidURLFormat()
+    public function isValidURLFormat($urlToCheck)
     {
-
+        return (filter_var($urlToCheck, FILTER_VALIDATE_URL))? true : false ;
     }
 
 }

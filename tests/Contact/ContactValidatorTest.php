@@ -19,16 +19,32 @@ class ContactValidatorTest extends \PHPUnit_Framework_TestCase {
         $contactValidator = new ContactValidator();
 
         $validEmail = 'name@example.com';
-        $invalidEmail = 'name';
+        $invalidEmail1 = 'me@name';
+        $invalidEmail2 = 'me@.com';
+        $invalidEmail3 = '@example.com';
 
         $this->assertEquals(true, $contactValidator->isValidEmailFormat($validEmail));
-        $this->assertEquals(false, $contactValidator->isValidEmailFormat($invalidEmail));
+        $this->assertEquals(false, $contactValidator->isValidEmailFormat($invalidEmail1));
+        $this->assertEquals(false, $contactValidator->isValidEmailFormat($invalidEmail2));
+        $this->assertEquals(false, $contactValidator->isValidEmailFormat($invalidEmail3));
     }
 
 
     public function test_contactValidator_isValidURLFormat_method_returns_if_valid_url_was_passed()
     {
+        $contactValidator = new ContactValidator();
 
+        $validURL = 'http://www.example.com';
+        $validURL2 = 'http://www.example.com';
+        $invalidURL1 = 'website.me';
+        $invalidURL2 = 'heer.';
+        $invalidURL3 = 'http://';
+
+        $this->assertEquals(true, $contactValidator->isValidURLFormat($validURL));
+        $this->assertEquals(true, $contactValidator->isValidURLFormat($validURL2));
+        $this->assertEquals(false, $contactValidator->isValidURLFormat($invalidURL1));
+        $this->assertEquals(false, $contactValidator->isValidURLFormat($invalidURL2));
+        $this->assertEquals(false, $contactValidator->isValidURLFormat($invalidURL3));
     }
 
 
