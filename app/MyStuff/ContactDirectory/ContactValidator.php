@@ -9,8 +9,11 @@
 namespace App\MyStuff\ContactDirectory;
 
 
+use App\MyStuff\Polymorphic\ValidatorTrait;
+
+
 class ContactValidator {
 
-
+    use ValidatorTrait;
 
 }

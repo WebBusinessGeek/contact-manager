@@ -35,4 +35,19 @@ trait ValidatorTrait {
         return true;
     }
 
+    public function isValidEmailFormat($emailToCheck)
+    {
+        return (filter_var($emailToCheck, FILTER_VALIDATE_EMAIL))? true : false ;
+    }
+
+    public function isValidPhoneNumberFormat()
+    {
+
+    }
+
+    public function isValidURLFormat()
+    {
+
+    }
+
 }

@@ -43,14 +43,14 @@ class ContactCommandController {
 
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-        //$this->validator->isValidAll($email, $url, $phoneNumber)
+        // WORKING $this->validator->isValidAll($email, $url, $phoneNumber)
                 //if yes
                     //DONE - $contact = $this->factory->createNewContact();
                     //DONE - $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
-                    // WORKING - $this->repository->storeContactInAccount($account_id, $contact)
-                    //$this->responder->sendMessage('Stored')
+                    // DONE - $this->repository->storeContactInAccount($account_id, $contact)
+                    // DONE $this->responder->sendMessage('Stored')
                 //if no
-                    //$this->responder->('Bad format for email, phone number, or url')
+                    // DONE $this->responder->('Bad format for email, phone number, or url')
     }
 
     public function update()

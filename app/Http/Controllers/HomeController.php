@@ -23,7 +23,7 @@ class HomeController extends Controller {
 
 	public function index()
 	{
-//
+
 //		$contactRepo = new ContactRepository();
 //
 //		$contact = $contactRepo->getContactByName(3, 'Gwendolyn Rice');
