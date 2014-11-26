@@ -40,14 +40,44 @@ trait ValidatorTrait {
         return (filter_var($emailToCheck, FILTER_VALIDATE_EMAIL))? true : false ;
     }
 
-    public function isValidPhoneNumberFormat()
+    public function isValidPhoneNumberFormat($phoneNumberToCheck)
     {
+        $acceptedformats = [
+            "/^([1]-)?[0-9]{3}-[0-9]{3}-[0-9]{4}$/i", // [1-]555-555-5555
+            "/^([1]-)?[0-9]{3}.[0-9]{3}.[0-9]{4}$/i", // [1-]555.555.5555
+            "/^([1]-)?\([0-9]{3}\)-[0-9]{3}-[0-9]{4}$/i" // [1-](555)-555-5555
 
+        ];
+
+        $responses = [];
+        foreach($acceptedformats as $format)
+        {
+          if(preg_match($format, $phoneNumberToCheck))
+          {
+             return true;
+          }
+        }
+        return false;
     }
+
 
     public function isValidURLFormat($urlToCheck)
     {
         return (filter_var($urlToCheck, FILTER_VALIDATE_URL))? true : false ;
     }
+
+
+    public function isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck)
+    {
+        return ($this->isValidEmailFormat($emailToCheck) == true
+            && $this->isValidPhoneNumberFormat($phoneNumberToCheck) == true);
+    }
+
+    public function isValidNumberEmailAndUrl($emailToCheck, $phoneNumberToCheck, $urlToCheck)
+    {
+        return ($this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck)
+            && $this->isValidURLFormat($urlToCheck) == true);
+    }
+
 
 }

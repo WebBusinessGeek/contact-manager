@@ -16,4 +16,12 @@ class ContactValidator {
 
     use ValidatorTrait;
 
+    public function isValidAll( $emailToCheck, $phoneNumberToCheck, $urlToCheck = null)
+    {
+       return (isset($urlToCheck))
+            ? $this->isValidNumberEmailAndUrl($emailToCheck, $phoneNumberToCheck, $urlToCheck)
+            : $this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck);
+    }
+
+
 }

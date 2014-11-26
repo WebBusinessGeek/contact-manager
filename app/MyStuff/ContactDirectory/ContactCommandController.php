@@ -43,7 +43,7 @@ class ContactCommandController {
 
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-        // WORKING $this->validator->isValidAll($email, $url, $phoneNumber)
+        // WORKING $this->validator->isValidAll($emailDONE, $urlDONE, $phoneNumberDONE)
                 //if yes
                     //DONE - $contact = $this->factory->createNewContact();
                     //DONE - $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
