@@ -60,5 +60,9 @@ class ContactRepositoryTest extends  \TestCase{
 
     }
 
+    public function test_ContactRepository_getContactById_method_returns_specified_contact()
+    {
+        //create new contact with 
+    }
 
 }

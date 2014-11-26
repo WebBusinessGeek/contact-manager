@@ -41,4 +41,9 @@ class ContactRepository {
         return $contact;
     }
 
+    public function getContactById($id)
+    {
+        
+    }
+
 }

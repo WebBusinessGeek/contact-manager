@@ -58,12 +58,22 @@ class ContactCommandController {
         return $this->responder->sendMessage('Bad format for email, phone number, or url');
     }
 
-    public function update()
+    public function show($id)
     {
+        /*
+        $this->repository->getContactById($id);
 
+        check if contact was returned
+
+            - if yes
+                return the contact
+            - if no
+                return $this->responder->sendMessage('No contact by given information');
+
+        */
     }
 
-    public function show()
+    public function update()
     {
 
     }
