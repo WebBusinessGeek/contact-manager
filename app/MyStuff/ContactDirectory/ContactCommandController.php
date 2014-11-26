@@ -79,12 +79,12 @@ class ContactCommandController {
     public function update($id, $newAttributes = array())
     {
         /*
-        CONDITION : $this->validator->isValidAttributes($newAttributes)  WORKING
+        CONDITION : $this->validator->isValidAttributes($newAttributes)  DONE
             - if yes
                 - $contact = $this->show($id) DONE
                 CONDITION : check if contact was returned
                     - if yes
-                        - $this->invoker->updateContact($contact, $newAttributes)  NOTDONE
+                        - $this->invoker->updateContact($contact, $newAttributes) STARTHERE
                         - $ths->repository->softSave($contact) NOTDONE
                         - return $this->responder('Updated') DONE
                     - if no

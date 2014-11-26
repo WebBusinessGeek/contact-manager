@@ -36,7 +36,7 @@ class ContactValidator {
     }
 
 
-    
+
     public function isValidAttributes($newAttributes = array())
     {
 

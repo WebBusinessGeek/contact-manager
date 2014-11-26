@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php" />
     </list>
     <ignored path="contactmgr2.iws" />
@@ -27,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContactValidator.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php">
+      <file leaf-file-name="ContactCommandController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.007194245" vertical-offset="830" max-vertical-offset="1575">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.38848922" vertical-offset="1755" max-vertical-offset="2650">
+              <caret line="86" column="91" selection-start-line="86" selection-start-column="91" selection-end-line="86" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -655,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2086331" vertical-offset="1755" max-vertical-offset="2650">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Contact/ContactValidatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.5467626" vertical-offset="3180" max-vertical-offset="3975">
@@ -688,8 +682,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.007194245" vertical-offset="830" max-vertical-offset="1575">
+        <state vertical-scroll-proportion="0.42446044" vertical-offset="530" max-vertical-offset="1575">
           <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding>
+            <marker date="1417030125000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417030125000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38848922" vertical-offset="1755" max-vertical-offset="2650">
+          <caret line="86" column="91" selection-start-line="86" selection-start-column="91" selection-end-line="86" selection-end-column="91" />
           <folding />
         </state>
       </provider>
