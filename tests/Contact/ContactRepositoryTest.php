@@ -62,7 +62,17 @@ class ContactRepositoryTest extends  \TestCase{
 
     public function test_ContactRepository_getContactById_method_returns_specified_contact()
     {
-        //create new contact with 
+        $contactRepo = new ContactRepository();
+
+        $contactWithId1 = $contactRepo->getContactById(1);
+        $contactWithId2 = $contactRepo->getContactById(2);
+
+
+        $this->assertEquals(1, $contactWithId1->id);
+        $this->assertEquals(2, $contactWithId2->id);
+
+        $this->setExpectedException('Illuminate\Database\Eloquent\ModelNotFoundException', 'No query results for model [App\MyStuff\ContactDirectory\Contact]');
+        $contactRepo->getContactById(34493450);
     }
 
 }

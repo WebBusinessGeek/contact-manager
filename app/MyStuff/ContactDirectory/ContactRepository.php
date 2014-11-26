@@ -20,12 +20,7 @@ class ContactRepository {
 
         return $contacts;
     }
-
-
-    public function getSpecificContactInAccount($account_id, $contact_id)
-    {
-
-    }
+    
 
     public function storeContactInAccount($account_id, Contact $contact)
     {
@@ -43,7 +38,9 @@ class ContactRepository {
 
     public function getContactById($id)
     {
-        
+        $contact = Contact::findOrFail($id);
+
+        return $contact;
     }
 
 }
