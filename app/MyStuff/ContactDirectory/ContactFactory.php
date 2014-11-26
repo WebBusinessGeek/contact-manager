@@ -11,6 +11,10 @@ namespace App\MyStuff\ContactDirectory;
 
 class ContactFactory {
 
+    /**
+     * Creates a new instance of the Contact class
+     * @return Contact
+     */
     public function createNewContact()
     {
         return new Contact();

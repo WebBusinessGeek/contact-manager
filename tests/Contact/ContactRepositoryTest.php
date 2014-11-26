@@ -27,5 +27,10 @@ class ContactRepositoryTest extends  \TestCase{
         $this->assertEquals(0, count($contactRepo->getAllContactsInAccount('a')));
     }
 
+    public function test_ContactRepository_storeContactInAccount_method_stores_a_contact_in_the_correct_account()
+    {
+
+    }
+
 
 }
