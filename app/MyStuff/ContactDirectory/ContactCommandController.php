@@ -45,17 +45,17 @@ class ContactCommandController {
 
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-//       if ($this->validator->isValidAll($email, $phoneNumber, $website) == true)
-//       {
-//           $contact = $this->factory->createNewContact();
-//
-//           $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website);
-//
-//           $this->repository->storeContactInAccount($account_id, $contact);
-//
-//           return $this->responder->sendMessage('Stored');
-//       }
-//        return $this->responder->sendMessage('Bad format for email, phone number, or url');
+       if ($this->validator->isValidAll($email, $phoneNumber, $website) == true)
+       {
+           $contact = $this->factory->createNewContact();
+
+           $this->invoker->addAttributesToContact($contact,  $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website);
+
+           $this->repository->storeContactInAccount($account_id, $contact);
+
+           return $this->responder->sendMessage('Stored');
+       }
+        return $this->responder->sendMessage('Bad format for email, phone number, or url');
     }
 
     public function update()
