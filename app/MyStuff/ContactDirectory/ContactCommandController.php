@@ -7,7 +7,7 @@
  */
 
 namespace App\MyStuff\ContactDirectory;
-
+use Illuminate\Database\Eloquent\ModelNotFoundException as ModelNotFoundException;
 
 class ContactCommandController {
 
@@ -43,6 +43,8 @@ class ContactCommandController {
         return (count($contacts) < 1) ? $this->responder->sendMessage('No contacts') : $contacts;
     }
 
+
+
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
        if ($this->validator->isValidAll($email, $phoneNumber, $website) == true)
@@ -58,19 +60,20 @@ class ContactCommandController {
         return $this->responder->sendMessage('Bad format for email, phone number, or url');
     }
 
+
+
     public function show($id)
     {
-        /*
-        $this->repository->getContactById($id);
+        try
+        {
+            $contact = $this->repository->getContactById($id);
+            return $contact;
+        }
+        catch(ModelNotFoundException $e)
+        {
+            return $this->responder->sendMessage('No contact by that id');
+        }
 
-        check if contact was returned
-
-            - if yes
-                return the contact
-            - if no
-                return $this->responder->sendMessage('No contact by given information');
-
-        */
     }
 
     public function update()

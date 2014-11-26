@@ -45,14 +45,20 @@ class ContactCommandControllerTest extends \TestCase {
         $this->assertEquals('somename@someemail.com', $contactCheckIfStoredInDB->email);
         $this->assertEquals('214-554-4455', $contactCheckIfStoredInDB->phone_number);
 
-        //DELETE the INSTANCES AFTER!!!!
+
     }
 
     public function test_ContactCommandController_show_method_retrieves_a_specified_contact_resource()
     {
+        $contactCmmdCtrl = new ContactCommandController();
 
+        $contactWithId1 = $contactCmmdCtrl->show(1);
+        $contactWithId2 = $contactCmmdCtrl->show(2);
 
-        //DELETE THE INSTANCES AFTER!!!
+        $this->assertEquals(1, $contactWithId1->id);
+        $this->assertEquals(2, $contactWithId2->id);
+        $this->assertEquals('No contact by that id', $contactCmmdCtrl->show(3434389239));
+
     }
 
 }
