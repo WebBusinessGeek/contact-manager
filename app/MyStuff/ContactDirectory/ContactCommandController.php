@@ -16,11 +16,21 @@ class ContactCommandController {
 
     public $responder;
 
+    public $validator;
+
+    public $factory;
+
+
     function __construct()
     {
         $this->repository = new ContactRepository();
 
         $this->responder = new ContactResponder();
+
+        $this->factory = new ContactFactory();
+
+        $this->validator = new ContactValidator();
+
     }
 
 
@@ -29,12 +39,17 @@ class ContactCommandController {
         $contacts = $this->repository->getAllContactsInAccount($account_id);
 
         return (count($contacts) < 1) ? $this->responder->sendMessage('No contacts') : $contacts;
-
     }
 
-    public function store()
+    public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-
+        //$this->validator->isValidAll($email, $url, $phoneNumber)
+                //if yes
+                    //$contact = $this->factory->createNewContact();
+                    //$this->repository->storeContactInAccount($contact, $account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website)
+                    //$this->responder->sendMessage('Stored')
+                //if no
+                    //$this->responder->('Bad format for email, phone number, or url')
     }
 
     public function update()

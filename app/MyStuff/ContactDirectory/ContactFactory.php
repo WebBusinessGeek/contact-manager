@@ -11,4 +11,8 @@ namespace App\MyStuff\ContactDirectory;
 
 class ContactFactory {
 
+    public function createNewContact()
+    {
+        return new Contact();
+    }
 }
