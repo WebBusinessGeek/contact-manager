@@ -84,8 +84,8 @@ class ContactCommandController {
                 - $contact = $this->show($id) DONE
                 CONDITION : check if contact was returned
                     - if yes
-                        - $this->invoker->updateContact($contact, $newAttributes) STARTHERE
-                        - $ths->repository->softSave($contact) NOTDONE
+                        - $this->invoker->updateContact($contact, $newAttributes) DONE
+                        - $ths->repository->softSave($contact) DONE
                         - return $this->responder('Updated') DONE
                     - if no
                         - return $this->responder('No contact by that id'); DONE

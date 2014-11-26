@@ -44,4 +44,13 @@ class ContactInvoker {
         }
         return $contact;
     }
+
+
+    public function updateContact(Contact $contact, $newAttributes)
+    {
+        $flatArray = array_values($newAttributes);
+
+        return $this->addAttributesToContact($contact, $flatArray[0], $flatArray[1], $flatArray[2], $flatArray[3],
+                $flatArray[4], $flatArray[5], $flatArray[6], $flatArray[7], $flatArray[8]);
+    }
 }

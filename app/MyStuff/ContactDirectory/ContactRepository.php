@@ -43,4 +43,9 @@ class ContactRepository {
         return $contact;
     }
 
+    public function softSave(Contact $contact)
+    {
+        $contact->save();
+    }
+
 }
