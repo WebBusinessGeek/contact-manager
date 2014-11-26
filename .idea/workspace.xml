@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Contact/ContactValidatorTest.php" afterPath="$PROJECT_DIR$/tests/Contact/ContactValidatorTest.php" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="ContactValidator.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92805755" vertical-offset="30" max-vertical-offset="925">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state vertical-scroll-proportion="-0.007194245" vertical-offset="830" max-vertical-offset="1575">
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -665,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Contact/ContactValidatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7122302" vertical-offset="2605" max-vertical-offset="3975">
-          <caret line="129" column="41" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
+        <state vertical-scroll-proportion="-0.5467626" vertical-offset="3180" max-vertical-offset="3975">
+          <caret line="117" column="30" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
           <folding>
             <marker date="1417028694000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
             <marker date="1417028694000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -689,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92805755" vertical-offset="30" max-vertical-offset="925">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state vertical-scroll-proportion="-0.007194245" vertical-offset="830" max-vertical-offset="1575">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding />
         </state>
       </provider>

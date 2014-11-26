@@ -16,21 +16,47 @@ class ContactValidator {
 
     use ValidatorTrait;
 
+    public $allowedAttributes = [
+        'name',
+        'email',
+        'phone_number',
+        'industry',
+        'role',
+        'contactRelation',
+        'company',
+        'title',
+        'website'
+    ];
+
     public function isValidAll( $emailToCheck, $phoneNumberToCheck, $urlToCheck = null)
     {
        return (isset($urlToCheck))
             ? $this->isValidNumberEmailAndUrl($emailToCheck, $phoneNumberToCheck, $urlToCheck)
             : $this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck);
     }
-//$this->validator->isValidAttributes($newAttributes)  WORKING
+
+
+    
     public function isValidAttributes($newAttributes = array())
     {
 
-        //make sure all attribute keys are present
+        foreach($this->allowedAttributes as $attribute)
+        {
+            if(array_key_exists($attribute, $newAttributes) == false)
+            {
+                return false;
+            }
+        }
 
-        //make sure UNnullable attributes are not null
+        for($i = 0; $i <= 5; $i++)
+        {
+            if(isset($newAttributes[$this->allowedAttributes[$i]]) == false || $newAttributes[$this->allowedAttributes[$i]] == null)
+            {
+                return false;
+            }
+        }
 
-        
+        return true;
     }
 
 
