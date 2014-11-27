@@ -78,28 +78,7 @@ class ContactCommandController {
 
     public function update($id, $newAttributes = array())
     {
-        /*
-        CONDITION : $this->validator->isValidAttributes($newAttributes)  DONE
-            - if yes
-                - $contact = $this->show($id) DONE
-                CONDITION : check if contact was returned
-                    - if yes
-                        - $this->invoker->updateContact($contact, $newAttributes) DONE
-                        - $ths->repository->softSave($contact) DONE
-                        - return $this->responder('Updated') DONE
-                    - if no
-                        - return $this->responder('No contact by that id'); DONE
-            - if no
-                - return $this->responder('Invalid Arguments') DONE
-
-        return CONTACT or 'Invalid Argument'//checkAttributesBeforeShow  NOTDONE
-        return Updated or 'No contact by that id' //checkContactUpdateable  NOTDONE
-         */
-
-//        $contact = $this->checkAttributesBeforeShow($id, $newAttributes);
-//
-//        return $this->tryToUpdateContact($contact, $newAttributes);
-
+        return $this->tryToUpdateContact($this->checkAttributesBeforeShow($id, $newAttributes), $newAttributes);
     }
 
     public function destroy()
@@ -116,13 +95,6 @@ class ContactCommandController {
      * */
 
 
-//return CONTACT or 'Invalid Argument'//checkAttributesBeforeShow  NOTDONE
-//CONDITION : $this->validator->isValidAttributes($newAttributes)  DONE
-//- if yes
-//- $contact = $this->show($id) DONE
-//  - if no
-//- return $this->responder('Invalid Arguments') DONE
-
     public function checkAttributesBeforeShow($id, $newAttributes = array())
     {
         return ($this->validator->isValidAttributes($newAttributes))
@@ -131,21 +103,9 @@ class ContactCommandController {
     }
 
 
-
-
-
-//return Updated or 'No contact by that id' //checkContactUpdateable  NOTDONE
-//CONDITION : check if contact was returned
-//- if yes
-//- $this->invoker->updateContact($contact, $newAttributes) DONE
-//- $ths->repository->softSave($contact) DONE
-//- return $this->responder('Updated') DONE
-//- if no
-//- return $this->responder('No contact by that id'); DONE
-
     public function tryToUpdateContact($possibleContact, $newAttributes)
     {
-        if(get_class($possibleContact) == 'App\MyStuff\ContactDirectory\Contact')
+        if(gettype($possibleContact) == 'object' && get_class($possibleContact) == 'App\MyStuff\ContactDirectory\Contact')
         {
             $this->invoker->updateContact($possibleContact, $newAttributes);
             $this->repository->softSave($possibleContact);

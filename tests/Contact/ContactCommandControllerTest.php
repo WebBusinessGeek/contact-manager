@@ -63,11 +63,71 @@ class ContactCommandControllerTest extends \TestCase {
 
     public function test_ContactCommandController_update_method_updates_a_specified_contact_resource()
     {
-//        $contactWithId1 = $contactCmmdCtrl->show(1);
-//        $contactWithId2 = $contactCmmdCtrl->show(2);
-//
-//        $this->assertEquals(1, $contactWithId1->id);
-//        $this->assertEquals(2, $contactWithId2->id);
+        $contactCmmdCtrl = new ContactCommandController();
+
+        $contact = $contactCmmdCtrl->store(1, 'SomeName4545451', 'someemail@email.com', '215-455-3535', 'Agriculture', 'Customer Support', 'Freelancer');
+
+        $contact = $contactCmmdCtrl->repository->getContactByName(1, 'SomeName4545451');
+
+        $newAttributes2 = [
+
+            'name' => 'SomeName4545452',
+
+            'email' => 'someemail2@email.com',
+
+            'phone_number' => '609-744-7557',
+
+            'industry' => 'Agriculture',
+
+            'role' => 'Customer Support',
+
+            'contactRelation' => 'Freelancer',
+
+            'company' => 'someCompany',
+
+            'title' => null,
+
+            'website' =>null
+        ];
+
+        $contactCmmdCtrl->update($contact->id, $newAttributes2);
+
+        $updatedContact = $contactCmmdCtrl->show($contact->id);
+
+        $this->assertEquals('SomeName4545452', $updatedContact->name);
+        $this->assertEquals('someemail2@email.com', $updatedContact->email);
+        $this->assertEquals('609-744-7557', $updatedContact->phone_number);
+        $this->assertEquals('Agriculture', $updatedContact->industry);
+
+        $newAttributes3 = [
+
+            'name' => 'SomeName4545453',
+
+            'email' => 'someemail3@email.com',
+
+            'phone_number' => '201-445-5667',
+
+            'industry' => 'Agriculture',
+
+            'role' => 'Customer Support',
+
+            'contactRelation' => 'Freelancer',
+
+            'company' => 'someCompany',
+
+            'title' => null,
+
+            'website' =>null
+        ];
+
+        $contactCmmdCtrl->update($contact->id, $newAttributes3);
+
+        $updatedContact2 = $contactCmmdCtrl->show($contact->id);
+
+        $this->assertEquals('SomeName4545453', $updatedContact2->name);
+        $this->assertEquals('someemail3@email.com', $updatedContact2->email);
+        $this->assertEquals('201-445-5667', $updatedContact2->phone_number);
+        $this->assertEquals('Agriculture', $updatedContact2->industry);
 
 
     }
