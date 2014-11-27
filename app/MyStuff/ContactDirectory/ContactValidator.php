@@ -60,4 +60,8 @@ class ContactValidator {
     }
 
 
+    public function isContactInstance($possibleContact)
+    {
+        return (gettype($possibleContact) == 'object' && get_class($possibleContact) == 'App\MyStuff\ContactDirectory\Contact');
+    }
 }

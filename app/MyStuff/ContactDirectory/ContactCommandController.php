@@ -81,8 +81,15 @@ class ContactCommandController {
         return $this->tryToUpdateContact($this->checkAttributesBeforeShow($id, $newAttributes), $newAttributes);
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+
+        /*
+
+        $contact = $this->show($id)
+
+        return ($this->validator->isContactInstance($contact)) ? $this->invoker->deleteContact($contact) : $contact;
+         */
 
     }
 
@@ -105,7 +112,7 @@ class ContactCommandController {
 
     public function tryToUpdateContact($possibleContact, $newAttributes)
     {
-        if(gettype($possibleContact) == 'object' && get_class($possibleContact) == 'App\MyStuff\ContactDirectory\Contact')
+        if($this->validator->isContactInstance($possibleContact))
         {
             $this->invoker->updateContact($possibleContact, $newAttributes);
             $this->repository->softSave($possibleContact);

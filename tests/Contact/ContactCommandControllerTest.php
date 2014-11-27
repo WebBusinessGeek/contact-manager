@@ -129,6 +129,8 @@ class ContactCommandControllerTest extends \TestCase {
         $this->assertEquals('201-445-5667', $updatedContact2->phone_number);
         $this->assertEquals('Agriculture', $updatedContact2->industry);
 
+        $this->assertEquals('No contact by that id', $contactCmmdCtrl->update(324394839483, $newAttributes2));
+
 
     }
 

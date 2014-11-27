@@ -10,6 +10,7 @@ namespace tests\Contact;
 
 
 use App\MyStuff\ContactDirectory\Contact;
+use App\MyStuff\ContactDirectory\ContactCommandController;
 use App\MyStuff\ContactDirectory\ContactInvoker;
 use Illuminate\Foundation\Testing\TestCase;
 
@@ -103,5 +104,27 @@ class ContactInvokerTest extends \TestCase {
         $this->assertEquals('some company', $contact->company);
         $this->assertEquals('President', $contact->title);
         $this->assertEquals('http://website.com', $contact->website);
+    }
+
+
+    public function test_contactInvoker_deleteContact_method_deletes_a_contact()
+    {
+        $contactInvoker = new ContactInvoker();
+
+        $contactCmmdCtrl = new ContactCommandController();
+
+        $contactCmmdCtrl->store(1, 'SomeCoolName12344321', 'email@email.com', '215-555-5555', 'Agriculture', 'Customer Support', 'Freelancer');
+
+        $contact = $contactCmmdCtrl->repository->getContactByName(1,'SomeCoolName12344321');
+
+        $this->assertEquals('SomeCoolName12344321', $contact->name);
+        $this->assertEquals('email@email.com', $contact->email);
+
+        //delete the contact and test to prove its no longer in the database
+        $contactInvoker->deleteContact($contact);
+
+        $afterDeleteContact = $contactCmmdCtrl->repository->getContactByName(1,'SomeCoolName12344321');
+        $this->assertNull($afterDeleteContact);
+
     }
 }
