@@ -47,15 +47,20 @@ class ContactInternalService implements ContactInternalServiceInterface{
     }
 
 
-    
+
     public function show($id)
     {
 
     }
 
+    /**Update the specified contact or return an error message
+     * @param $id
+     * @param array $newAttributes
+     * @return mixed
+     */
     public function update($id, $newAttributes = array())
     {
-
+        return $this->commandController->update($id, $newAttributes);
     }
 
     public function destroy($id)

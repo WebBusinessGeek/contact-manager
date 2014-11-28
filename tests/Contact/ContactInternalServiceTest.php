@@ -34,15 +34,64 @@ class ContactInternalServiceTest extends \TestCase {
 
         $contact = $contactInternalService->commandController->repository->getContactByName(1,'AWayCoolerName233233');
 
-        //confirm attributes
         $this->assertEquals('AWayCoolerName233233', $contact->name);
         $this->assertEquals('awaycool@email.com', $contact->email);
         $this->assertEquals('215-344-3444', $contact->phone_number);
     }
 
+    public function test_contactInternalService_show_method_retrieves_specified_contact_resource()
+    {
+        
+    }
+
+
     public function test_contactInternalService_update_method_updates_a_specified_contact()
     {
+        $contactInternalService = new ContactInternalService();
 
+        $contactInternalService->store(1, 'TheLamestNameEver13123231', 'supercoolish@email.com', '215-385-4354', 'Agriculture', 'Customer Support', 'Freelancer');
+
+        $contact = $contactInternalService->commandController->repository->getContactByName(1, 'TheLamestNameEver13123231');
+
+
+        $this->assertEquals('TheLamestNameEver13123231', $contact->name);
+        $this->assertEquals('supercoolish@email.com', $contact->email);
+        $this->assertEquals('215-385-4354', $contact->phone_number);
+        $this->assertEquals(null, $contact->company);
+
+        $newAttributes = [
+            'name' => 'TheNewestNameEver13123231',
+
+            'email' => 'SuperGoblin@email.com',
+
+            'phone_number' => '231-457-9867',
+
+            'industry' => 'Agriculture',
+
+            'role' => 'Customer Support',
+
+            'contactRelation' => 'Freelancer',
+
+            'company' => 'someCompany',
+
+            'title' => null,
+
+            'website' => null
+
+        ];
+
+        $contactInternalService->update($contact->id, $newAttributes);
+
+        $updatedContact = $contactInternalService->commandController->show($contact->id);
+
+
+        $this->assertEquals('TheNewestNameEver13123231', $updatedContact->name);
+        $this->assertEquals('SuperGoblin@email.com', $updatedContact->email);
+        $this->assertEquals('231-457-9867', $updatedContact->phone_number);
+        $this->assertEquals('someCompany', $updatedContact->company);
+
+
+        $contactInternalService->commandController->destroy($updatedContact->id);
     }
 
     public function test_contactInternalService_destroy_method_deletes_a_specified_contact_from_table_in_db()
