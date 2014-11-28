@@ -9,7 +9,7 @@
 namespace App\MyStuff\ContactDirectory;
 
 
-class ContactInternalService {
+class ContactInternalService implements ContactInternalServiceInterface{
 
     public $commandController;
 
@@ -18,22 +18,33 @@ class ContactInternalService {
         $this->commandController = new ContactCommandController();
     }
 
-    public function index()
+    /**Returns all contacts associated with specified account, otherwise 'No contacts' will be returned.
+     * @param $account_id
+     * @return mixed
+     */
+    public function index($account_id)
+    {
+        return $this->commandController->index($account_id);
+    }
+
+
+    
+    public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
 
     }
 
-    public function store()
+    public function show($id)
     {
 
     }
 
-    public function update()
+    public function update($id, $newAttributes = array())
     {
 
     }
 
-    public function destroy()
+    public function destroy($id)
     {
 
     }
