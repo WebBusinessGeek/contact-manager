@@ -28,12 +28,26 @@ class ContactInternalService implements ContactInternalServiceInterface{
     }
 
 
-    
+    /**Creates and stores a contact resource in the contacts database.
+     * @param $account_id
+     * @param $name
+     * @param $email
+     * @param $phoneNumber
+     * @param $industry
+     * @param $role
+     * @param $contactRelation
+     * @param null $company
+     * @param null $title
+     * @param null $website
+     * @return mixed
+     */
     public function store($account_id, $name, $email, $phoneNumber, $industry, $role, $contactRelation, $company =null, $title = null, $website = null)
     {
-
+        return $this->commandController->store($account_id,$name, $email, $phoneNumber, $industry, $role, $contactRelation, $company, $title, $website);
     }
 
+
+    
     public function show($id)
     {
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalServiceInterface.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalServiceInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php" afterPath="$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php" />
     </list>
     <ignored path="contactmgr2.iws" />
@@ -34,8 +33,8 @@
           <file leaf-file-name="ContactInternalService.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.78592813" vertical-offset="100" max-vertical-offset="1325">
-                  <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+                <state vertical-scroll-proportion="1.4595808" vertical-offset="125" max-vertical-offset="1675">
+                  <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -48,8 +47,8 @@
           <file leaf-file-name="ContactInternalServiceTest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.40431654" vertical-offset="94" max-vertical-offset="1075">
-                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.31654677" vertical-offset="605" max-vertical-offset="1300">
+                  <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
                   <folding />
                 </state>
               </provider>
@@ -774,16 +773,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40431654" vertical-offset="94" max-vertical-offset="1075">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.31654677" vertical-offset="605" max-vertical-offset="1300">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78592813" vertical-offset="100" max-vertical-offset="1325">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state vertical-scroll-proportion="1.4595808" vertical-offset="125" max-vertical-offset="1675">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
           <folding />
         </state>
       </provider>
