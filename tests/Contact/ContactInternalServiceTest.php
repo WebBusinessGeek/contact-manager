@@ -110,6 +110,22 @@ class ContactInternalServiceTest extends \TestCase {
 
     public function test_contactInternalService_destroy_method_deletes_a_specified_contact_from_table_in_db()
     {
+        $contactInternalService = new ContactInternalService();
 
+
+        $contactInternalService->store(1, 'OhIsIt1332244223', 'yeahitis@email.com', '215-985-8999', 'Agriculture', 'Customer Support', 'Freelancer');
+
+
+        $contact = $contactInternalService->commandController->repository->getContactByName(1,'OhIsIt1332244223');
+
+        $this->assertEquals('OhIsIt1332244223', $contact->name);
+        $this->assertEquals('yeahitis@email.com', $contact->email);
+
+
+        $this->assertEquals('Deleted', $contactInternalService->destroy($contact->id));
+
+
+        $contactAfterDelete = $contactInternalService->commandController->repository->getContactByName(1, 'OhIsIt1332244223');
+        $this->assertEquals(null, $contactAfterDelete);
     }
 }

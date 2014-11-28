@@ -66,9 +66,14 @@ class ContactInternalService implements ContactInternalServiceInterface{
         return $this->commandController->update($id, $newAttributes);
     }
 
+
+    /**Delete the specified contact from the database, otherwise return a message.
+     * @param $id
+     * @return \Illuminate\Support\Collection|mixed|string|static
+     */
     public function destroy($id)
     {
-
+        return $this->commandController->destroy($id);
     }
 
 
