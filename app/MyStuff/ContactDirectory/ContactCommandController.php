@@ -83,14 +83,8 @@ class ContactCommandController {
 
     public function destroy($id)
     {
-
-        /*
-
-        $contact = $this->show($id)
-
+        $contact = $this->show($id);
         return ($this->validator->isContactInstance($contact)) ? $this->invoker->deleteContact($contact) : $contact;
-         */
-
     }
 
 

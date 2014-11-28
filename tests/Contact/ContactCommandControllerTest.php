@@ -134,4 +134,24 @@ class ContactCommandControllerTest extends \TestCase {
 
     }
 
+
+    public function test_contactCommandController_delete_method_deletes_a_contact_resource()
+    {
+        $contactCmmdCtrl = new ContactCommandController();
+
+        $contactCmmdCtrl->store(1, 'SomeUnCoolName4545493433', 'email343429@email.com', '215-555-5555', 'Agriculture', 'Customer Support', 'Freelancer');
+
+        $contact = $contactCmmdCtrl->repository->getContactByName(1,'SomeUnCoolName4545493433');
+
+        $this->assertEquals('SomeUnCoolName4545493433', $contact->name);
+        $this->assertEquals('email343429@email.com', $contact->email);
+
+        $this->assertEquals('Deleted', $contactCmmdCtrl->destroy($contact->id));
+
+        $afterDeleteContact = $contactCmmdCtrl->repository->getContactByName(1,'SomeUnCoolName4545493433');
+        $this->assertNull($afterDeleteContact);
+
+        $this->assertEquals('No contact by that id', $contactCmmdCtrl->destroy(32343942893489320439));
+    }
+
 }
