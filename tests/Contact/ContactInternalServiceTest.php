@@ -41,7 +41,21 @@ class ContactInternalServiceTest extends \TestCase {
 
     public function test_contactInternalService_show_method_retrieves_specified_contact_resource()
     {
-        
+        $contactInternalService = new ContactInternalService();
+
+
+        $contactInternalService->store(1, 'ThisIsANameMan45596', 'socoolemail@email.com', '215-949-2344', 'Agriculture', 'Customer Support', 'Freelancer');
+
+
+        $contact = $contactInternalService->commandController->repository->getContactByName(1,'ThisIsANameMan45596');
+
+        $this->assertEquals('ThisIsANameMan45596', $contact->name);
+        $id = $contact->id;
+
+        $contactViaShowMethod = $contactInternalService->show($id);
+
+        $this->assertEquals('ThisIsANameMan45596', $contactViaShowMethod->name);
+        $this->assertEquals('App\MyStuff\ContactDirectory\Contact', get_class($contactViaShowMethod));
     }
 
 

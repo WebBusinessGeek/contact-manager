@@ -47,13 +47,16 @@ class ContactInternalService implements ContactInternalServiceInterface{
     }
 
 
-
+    /**Retrieves specified contact resource from database.
+     * @param $id
+     * @return \Illuminate\Support\Collection|mixed|static
+     */
     public function show($id)
     {
-
+        return $this->commandController->show($id);
     }
 
-    /**Update the specified contact or return an error message
+    /**Update the specified contact or return an error message.
      * @param $id
      * @param array $newAttributes
      * @return mixed

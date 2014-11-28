@@ -37,8 +37,8 @@
           <file leaf-file-name="ContactInternalService.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.352518" vertical-offset="1005" max-vertical-offset="1800">
-                  <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+                <state vertical-scroll-proportion="1.1438849" vertical-offset="530" max-vertical-offset="1875">
+                  <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
                   <folding />
                 </state>
               </provider>
@@ -51,8 +51,8 @@
           <file leaf-file-name="ContactInternalServiceTest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.36690646" vertical-offset="1180" max-vertical-offset="2525">
-                  <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.35971224" vertical-offset="1000" max-vertical-offset="2875">
+                  <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
@@ -704,18 +704,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php">
+    <entry file="file://$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.352518" vertical-offset="1005" max-vertical-offset="1800">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.35971224" vertical-offset="1000" max-vertical-offset="2875">
+          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Contact/ContactInternalServiceTest.php">
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInternalService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36690646" vertical-offset="1180" max-vertical-offset="2525">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state vertical-scroll-proportion="1.1438849" vertical-offset="530" max-vertical-offset="1875">
+          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
           <folding />
         </state>
       </provider>
