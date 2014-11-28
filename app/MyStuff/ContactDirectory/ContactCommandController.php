@@ -81,6 +81,9 @@ class ContactCommandController {
         return $this->tryToUpdateContact($this->checkAttributesBeforeShow($id, $newAttributes), $newAttributes);
     }
 
+
+
+
     public function destroy($id)
     {
         $contact = $this->show($id);

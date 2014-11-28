@@ -16,6 +16,9 @@ class ContactValidator {
 
     use ValidatorTrait;
 
+    /**Allowed attributes of Contact class database schema
+     * @var array
+     */
     public $allowedAttributes = [
         'name',
         'email',
@@ -28,6 +31,12 @@ class ContactValidator {
         'website'
     ];
 
+    /**Returns true if all values passed could be valid attribute values, otherwise false
+     * @param $emailToCheck
+     * @param $phoneNumberToCheck
+     * @param null $urlToCheck
+     * @return bool
+     */
     public function isValidAll( $emailToCheck, $phoneNumberToCheck, $urlToCheck = null)
     {
        return (isset($urlToCheck))
@@ -36,7 +45,10 @@ class ContactValidator {
     }
 
 
-
+    /**Returns true if attribute array (keys and values) are valid, otherwise false
+     * @param array $newAttributes
+     * @return bool
+     */
     public function isValidAttributes($newAttributes = array())
     {
 
@@ -60,6 +72,10 @@ class ContactValidator {
     }
 
 
+    /**Returns true if instance passed in is instance of the Contact class, otherwise returns false
+     * @param $possibleContact
+     * @return bool
+     */
     public function isContactInstance($possibleContact)
     {
         return (gettype($possibleContact) == 'object' && get_class($possibleContact) == 'App\MyStuff\ContactDirectory\Contact');

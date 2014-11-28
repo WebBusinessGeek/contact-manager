@@ -11,8 +11,7 @@ namespace App\MyStuff\ContactDirectory;
 
 class ContactInvoker {
 
-    /**
-     * Add passed in attributes to instance of Contact class
+    /**Adds the passed in attributes to an instance of Contact class
      * @param Contact $contact
      * @param $name
      * @param $email
@@ -46,6 +45,11 @@ class ContactInvoker {
     }
 
 
+    /**Flattens array and then as the values as attributes to an instance of the Contact class
+     * @param Contact $contact
+     * @param $newAttributes
+     * @return Contact
+     */
     public function updateContact(Contact $contact, $newAttributes)
     {
         $flatArray = array_values($newAttributes);
@@ -54,6 +58,11 @@ class ContactInvoker {
                 $flatArray[4], $flatArray[5], $flatArray[6], $flatArray[7], $flatArray[8]);
     }
 
+    /**Removes specified row/resource from the contacts database table
+     * @param Contact $contact
+     * @return string
+     * @throws \Exception
+     */
     public function deleteContact(Contact $contact)
     {
         $contact->delete();
