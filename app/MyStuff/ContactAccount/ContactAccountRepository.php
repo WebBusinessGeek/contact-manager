@@ -41,9 +41,7 @@ class ContactAccountRepository {
      */
     public function getContactAccountByNickname($user_id, $nickname)
     {
-        $contactAccount = ContactAccount::where('user_id', '=', $user_id)->where('nickname', '=', $nickname)->first();
-
-        return $contactAccount;
+        return ContactAccount::where('user_id', '=', $user_id)->where('nickname', '=', $nickname)->first();
     }
 
 }
