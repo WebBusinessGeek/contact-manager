@@ -44,4 +44,10 @@ class ContactAccountRepository {
         return ContactAccount::where('user_id', '=', $user_id)->where('nickname', '=', $nickname)->first();
     }
 
+
+    public function getContactAccountById($account_id)
+    {
+        return ContactAccount::findOrFail($account_id);
+    }
+
 }

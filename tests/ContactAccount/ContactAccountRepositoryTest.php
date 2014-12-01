@@ -62,4 +62,15 @@ class ContactAccountRepositoryTest extends \TestCase {
 
     }
 
+
+    public function test_contactAccountRepository_getContactAccountById_method_retrieves_a_matching_contactAccount_resource_from_DB()
+    {
+        $contactAccountRepo = new ContactAccountRepository();
+
+        $contactAccount = $contactAccountRepo->getContactAccountById(1);
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccount));
+        $this->assertEquals(1, $contactAccount->id);
+    }
+
 }

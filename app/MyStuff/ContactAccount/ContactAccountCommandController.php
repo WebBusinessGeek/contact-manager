@@ -56,10 +56,21 @@ class ContactAccountCommandController {
     }
 
 
-    
-    public function show()
-    {
 
+    public function show($user_id, $account_id)
+    {
+        /*
+
+      try
+        {
+            $contactAccount = $this->repository->getContactAccountById($account_id);
+            return $contactAccount;
+        }
+        catch(ModelNotFoundException $e)
+        {
+            return $this->responder->sendMessage('No Contact Account by that id');
+        }
+         * */
     }
 
     public function update()
