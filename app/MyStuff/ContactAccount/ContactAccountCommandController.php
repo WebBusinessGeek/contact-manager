@@ -56,21 +56,20 @@ class ContactAccountCommandController {
     }
 
 
-
-    public function show($user_id, $account_id)
+    /**Retrieves a specified ContactAccount from Database by id.
+     * @param $account_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed
+     */
+    public function show($account_id)
     {
-        /*
-
       try
         {
-            $contactAccount = $this->repository->getContactAccountById($account_id);
-            return $contactAccount;
+            return $this->repository->getContactAccountById($account_id);
         }
         catch(ModelNotFoundException $e)
         {
             return $this->responder->sendMessage('No Contact Account by that id');
         }
-         * */
     }
 
     public function update()

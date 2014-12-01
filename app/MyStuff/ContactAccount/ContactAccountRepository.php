@@ -45,6 +45,10 @@ class ContactAccountRepository {
     }
 
 
+    /**Retrieves a ContactAccount by id from the contactAccounts database table.
+     * @param $account_id
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
     public function getContactAccountById($account_id)
     {
         return ContactAccount::findOrFail($account_id);

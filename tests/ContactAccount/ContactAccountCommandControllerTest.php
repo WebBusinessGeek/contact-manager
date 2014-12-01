@@ -11,7 +11,9 @@ namespace tests\ContactAccount;
 
 use App\MyStuff\ContactAccount\ContactAccount;
 use App\MyStuff\ContactAccount\ContactAccountCommandController;
+use App\MyStuff\ContactDirectory\ContactCommandController;
 use Illuminate\Foundation\Testing\TestCase;
+use tests\Contact\ContactCommandControllerTest;
 
 class ContactAccountCommandControllerTest extends \TestCase{
 
@@ -41,6 +43,18 @@ class ContactAccountCommandControllerTest extends \TestCase{
 
     public function test_ContactAccountCmmdCtrl_show_method_retrieves_a_specified_account_associated_with_a_user_and_its_contacts()
     {
+        $contactAccountCmmdCtrl = new ContactAccountCommandController();
+
+        $contactAccount = $contactAccountCmmdCtrl->show(1);
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccount));
+        $this->assertEquals(1, $contactAccount->id);
+
+        $contactAccount2 = $contactAccountCmmdCtrl->show(2);
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccount2));
+        $this->assertEquals(2, $contactAccount2->id);
+
 
     }
 
