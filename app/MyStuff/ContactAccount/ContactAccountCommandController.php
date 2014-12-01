@@ -23,7 +23,6 @@ class ContactAccountCommandController {
 
     }
 
-
     /**Returns all contactAccounts associated with a given user, otherwise a warning message.
      * @param $user_id
      * @return mixed
@@ -35,9 +34,17 @@ class ContactAccountCommandController {
         return (count($accounts) < 1) ? $this->responder->sendMessage('No accounts associated with that user') : $accounts;
     }
 
-    public function store()
+    public function store($user_id, $name)
     {
+        /*
 
+        $contact = $this->factory->createNewContactAccount() DONE
+
+        $this->invoker->addNameToContactAccount($contact, $name)
+
+        $this->repository->store($user_id, $contact)
+
+         * */
     }
 
     public function show()

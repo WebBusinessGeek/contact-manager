@@ -11,4 +11,10 @@ namespace App\MyStuff\ContactAccount;
 
 class ContactAccountFactory {
 
+    public function createNewContactAccount()
+    {
+        return new ContactAccount();
+    }
+
+
 }
