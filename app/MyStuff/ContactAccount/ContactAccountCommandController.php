@@ -40,7 +40,7 @@ class ContactAccountCommandController {
 
         $contact = $this->factory->createNewContactAccount() DONE
 
-        $this->invoker->addNameToContactAccount($contact, $name)
+        $this->invoker->addNameToContactAccount($contact, $name) DONE
 
         $this->repository->store($user_id, $contact)
 

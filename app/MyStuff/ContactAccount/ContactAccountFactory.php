@@ -11,6 +11,9 @@ namespace App\MyStuff\ContactAccount;
 
 class ContactAccountFactory {
 
+    /**Returns a new ContactAccount instance.
+     * @return ContactAccount
+     */
     public function createNewContactAccount()
     {
         return new ContactAccount();
