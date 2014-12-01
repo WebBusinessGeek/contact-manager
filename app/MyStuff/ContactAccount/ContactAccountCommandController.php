@@ -11,4 +11,29 @@ namespace App\MyStuff\ContactAccount;
 
 class ContactAccountCommandController {
 
+    public function index()
+    {
+
+    }
+
+    public function store()
+    {
+
+    }
+
+    public function show()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function destroy()
+    {
+
+    }
+
 }
