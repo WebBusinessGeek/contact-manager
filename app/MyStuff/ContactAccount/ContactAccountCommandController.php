@@ -16,10 +16,17 @@ class ContactAccountCommandController {
 
     public $responder;
 
+    public $invoker;
+
+    public $factory;
+
+
     function __construct()
     {
         $this->repository = new ContactAccountRepository();
         $this->responder = new ContactAccountResponder();
+        $this->invoker = new ContactAccountInvoker();
+        $this->factory = new ContactAccountFactory();
 
     }
 
@@ -36,15 +43,17 @@ class ContactAccountCommandController {
 
     public function store($user_id, $name)
     {
-        /*
 
-        $contact = $this->factory->createNewContactAccount() DONE
 
-        $this->invoker->addNameToContactAccount($contact, $name) DONE
+//        $contact = $this->factory->createNewContactAccount();
+//
+//        $this->invoker->addNameToContactAccount($contact, $name);
+//
+//        $this->repository->storeContactAccount($user_id, $contact);
+//
+//        $this->responder->sendMessage('stored');
 
-        $this->repository->store($user_id, $contact)
 
-         * */
     }
 
     public function show()

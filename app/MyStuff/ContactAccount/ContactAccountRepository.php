@@ -21,4 +21,29 @@ class ContactAccountRepository {
 
         return $accounts;
     }
+
+    /**Stores a contactAccount resource in the contactAccounts database table.
+     * @param $user_id
+     * @param ContactAccount $contactAccount
+     */
+    public function storeContactAccount($user_id, ContactAccount $contactAccount)
+    {
+        $contactAccount->user_id = $user_id;
+
+        $contactAccount->save();
+    }
+
+
+    /**Retrieves a contactAccount from the contactAccounts database table by its nickname and user_id.
+     * @param $user_id
+     * @param $nickname
+     * @return mixed
+     */
+    public function getContactAccountByNickname($user_id, $nickname)
+    {
+        $contactAccount = ContactAccount::where('user_id', '=', $user_id)->where('nickname', '=', $nickname)->first();
+
+        return $contactAccount;
+    }
+
 }
