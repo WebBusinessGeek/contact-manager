@@ -9,13 +9,21 @@
 namespace tests\ContactAccount;
 
 
+use App\MyStuff\ContactAccount\ContactAccountCommandController;
 use Illuminate\Foundation\Testing\TestCase;
 
 class ContactAccountCommandControllerTest extends \TestCase{
 
     public function test_ContactAccountCmmdCtrl_index_method_retrieves_all_accounts_associated_with_a_user()
     {
+        $contactAccountCmmdCtrl = new ContactAccountCommandController();
 
+        $accounts = $contactAccountCmmdCtrl->index(1);
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($accounts[0]));
+
+        $noAccounts = $contactAccountCmmdCtrl->index(1242039520952039);
+        $this->assertEquals('No accounts associated with that user', $noAccounts);
     }
 
 
@@ -36,7 +44,7 @@ class ContactAccountCommandControllerTest extends \TestCase{
 
     public function test_ContactAccountCmmdCtrl_destroy_method_deletes_a_contactAccount_resource_from_DB()
     {
-        
+
     }
 
 }
