@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountRepository.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ContactAccount/ContactAccountCommandControllerTest.php" afterPath="$PROJECT_DIR$/tests/ContactAccount/ContactAccountCommandControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInvoker.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInvoker.php" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContactAccountRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountRepository.php">
+      <file leaf-file-name="ContactAccountCommandController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78705037" vertical-offset="478" max-vertical-offset="1175">
-              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.68345326" vertical-offset="850" max-vertical-offset="1875">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -611,19 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInvoker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32374102" vertical-offset="0" max-vertical-offset="695">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding>
-            <marker date="1417458992000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417458992000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417458992000" expanded="true" signature="-1:-1" placeholder=" @param ContactAccount $contactAccount ..." />
-            <marker date="1417458992000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.7697842" vertical-offset="950" max-vertical-offset="3050">
@@ -680,24 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountCommandControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33093524" vertical-offset="395" max-vertical-offset="1400">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="38" selection-end-column="81" />
-          <folding>
-            <marker date="1417461960000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417461960000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461960000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountRepositoryTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8561151" vertical-offset="730" max-vertical-offset="1600">
@@ -713,29 +684,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php">
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877698" vertical-offset="850" max-vertical-offset="1850">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="2" selection-end-line="53" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.78417265" vertical-offset="480" max-vertical-offset="1175">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding>
-            <marker date="1417461965000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417461965000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462149000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
+            <marker date="1417462149000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountRepository.php">
+    <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountCommandControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78705037" vertical-offset="478" max-vertical-offset="1175">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.51079136" vertical-offset="395" max-vertical-offset="1400">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1417462227000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417462227000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417462227000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInvoker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32374102" vertical-offset="0" max-vertical-offset="695">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <marker date="1417462437000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417462437000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417462437000" expanded="true" signature="-1:-1" placeholder=" @param ContactAccount $contactAccount ..." />
+            <marker date="1417462437000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68345326" vertical-offset="850" max-vertical-offset="1875">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           <folding />
         </state>
       </provider>

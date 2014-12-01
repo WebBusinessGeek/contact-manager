@@ -41,21 +41,22 @@ class ContactAccountCommandController {
         return (count($accounts) < 1) ? $this->responder->sendMessage('No accounts associated with that user') : $accounts;
     }
 
+
+    /**Store a ContactAccount in the contactAccounts Database table.
+     * @param $user_id
+     * @param $name
+     * @return mixed
+     */
     public function store($user_id, $name)
     {
+        $this->repository->storeContactAccount($user_id,
+            $this->invoker->addNicknameToContactAccount($contact = $this->factory->createNewContactAccount(), $name));
 
-
-//        $contact = $this->factory->createNewContactAccount();
-//
-//        $this->invoker->addNameToContactAccount($contact, $name);
-//
-//        $this->repository->storeContactAccount($user_id, $contact);
-//
-//        $this->responder->sendMessage('stored');
-
-
+        return $this->responder->sendMessage('stored');
     }
 
+
+    
     public function show()
     {
 

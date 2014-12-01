@@ -12,13 +12,16 @@ namespace App\MyStuff\ContactAccount;
 class ContactAccountInvoker {
 
 
-    /**Adds a nickname attribute to the passed in ContactAccount resource.
+    /**Adds a nickname to the passed in ContactAccount instance.
      * @param ContactAccount $contactAccount
      * @param $name
+     * @return ContactAccount
      */
     public function addNicknameToContactAccount(ContactAccount $contactAccount, $name)
     {
         $contactAccount->nickname = $name;
+
+        return $contactAccount;
     }
 
 }

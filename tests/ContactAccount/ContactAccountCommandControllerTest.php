@@ -30,13 +30,13 @@ class ContactAccountCommandControllerTest extends \TestCase{
 
     public function test_ContactAccountCmmdCtrl_store_method_creates_and_stores_a_new_resource_in_contactAccount_DB_table()
     {
-//        $contactAccountCommdCtrol = new ContactAccountCommandController();
-//
-//        $contactAccountCommdCtrol->store(1339320, 'SomeCrazyNickName334');
-//
-//        $contactAccount = $contactAccountCommdCtrol->repository->getContactAccountByNickname(1339320, 'SomeCrazyNickName334');
-//
-//        $this->assertEquals('SomeCrazyNickName334', $contactAccount->nickname);
+        $contactAccountCommdCtrol = new ContactAccountCommandController();
+
+        $contactAccountCommdCtrol->store(1339320, 'SomeCrazyNickName334');
+
+        $contactAccount = $contactAccountCommdCtrol->repository->getContactAccountByNickname(1339320, 'SomeCrazyNickName334');
+
+        $this->assertEquals('SomeCrazyNickName334', $contactAccount->nickname);
     }
 
     public function test_ContactAccountCmmdCtrl_show_method_retrieves_a_specified_account_associated_with_a_user_and_its_contacts()
