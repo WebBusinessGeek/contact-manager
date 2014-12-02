@@ -79,9 +79,16 @@ class ContactAccountCommandController {
 
     }
 
-    public function destroy()
+    public function destroy($account_id)
     {
+        /*
 
+        $account = $this->show($account_id); DONE
+
+        return $this->validator->isAContactAccount($account) ? $this->invoker->deleteContactAccount($account) : $account;
+
+        //make (get_class($account) == 'App\MyStuff\ContactAccount\ContactAccount') a $this->validator->isAContactAccount method
+         * */
     }
 
 }
