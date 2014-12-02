@@ -82,11 +82,15 @@ class ContactAccountCommandController {
 
     }
 
+    /**Deletes a ContactAccount resource from the contactAccounts DB table.
+     * @param $account_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed|string
+     */
     public function destroy($account_id)
     {
-//        $account = $this->show($account_id);
-//
-//        return $this->validator->isAContactAccount($account)  ? $this->invoker->deleteContactAccount($account)  : $account;
+        $account = $this->show($account_id);
+
+        return $this->validator->isAContactAccount($account)  ? $this->invoker->deleteContactAccount($account)  : $account;
     }
 
 }

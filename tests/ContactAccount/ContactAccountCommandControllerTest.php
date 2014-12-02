@@ -68,7 +68,23 @@ class ContactAccountCommandControllerTest extends \TestCase{
 
     public function test_ContactAccountCmmdCtrl_destroy_method_deletes_a_contactAccount_resource_from_DB()
     {
+        $contactAccountCmmdCtrl = new ContactAccountCommandController();
 
+        $contactAccountCmmdCtrl->store(34443, 'ThisIsFromTheDestroyMethod');
+
+        $contactFromDB = $contactAccountCmmdCtrl->repository->getContactAccountByNickname(34443, 'ThisIsFromTheDestroyMethod');
+        $this->assertEquals('ThisIsFromTheDestroyMethod', $contactFromDB->nickname);
+        $this->assertEquals(34443, $contactFromDB->user_id);
+
+
+        $contactAccountCmmdCtrl->destroy($contactFromDB->id);
+
+
+        $afterDeleteContactAccount = $contactAccountCmmdCtrl->repository->getContactAccountByNickname(34443, 'ThisIsFromTheDestroyMethod');
+        $this->assertEquals(null, $afterDeleteContactAccount);
+
+        $notAContactAccountCheck = $contactAccountCmmdCtrl->destroy(3290430294333834384398);
+        $this->assertEquals('No Contact Account by that id', $notAContactAccountCheck);
     }
 
 }
