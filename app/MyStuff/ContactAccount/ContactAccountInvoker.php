@@ -24,4 +24,10 @@ class ContactAccountInvoker {
         return $contactAccount;
     }
 
+    public function deleteContactAccount(ContactAccount $contactAccount)
+    {
+        $contactAccount->delete();
+        return 'Deleted';
+    }
+
 }
