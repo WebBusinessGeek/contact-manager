@@ -77,15 +77,15 @@ class ContactAccountCommandController {
         }
     }
 
-    public function update($account_id)
+    /**Updates a ContactAccount instance or returns an error message.
+     * @param $account_id
+     * @param $newNickname
+     * @return \Illuminate\Database\Eloquent\Collection|mixed|string
+     */
+    public function update($account_id, $newNickname)
     {
-        /*
-
-        $account = $this->show($account_id); DONE
-
-        return $this->validator->isAContactAccount($account) DONE ? $this->repository->softSave($this->invoker->updateContactAccount($account)) : $account; DONE
-
-         * */
+        $account = $this->show($account_id);
+        return $this->validator->isAContactAccount($account)  ? $this->repository->softSave($this->invoker->changeContactAccountNickname($account, $newNickname)) : $account;
     }
 
     /**Deletes a ContactAccount resource from the contactAccounts DB table.
@@ -95,7 +95,6 @@ class ContactAccountCommandController {
     public function destroy($account_id)
     {
         $account = $this->show($account_id);
-
         return $this->validator->isAContactAccount($account)  ? $this->invoker->deleteContactAccount($account)  : $account;
     }
 

@@ -64,6 +64,23 @@ class ContactAccountCommandControllerTest extends \TestCase{
     public function test_ContactAccountCmmdCtrl_update_method_changes_a_contactAccount_resource_stored_in_the_DB_table()
     {
 
+        $contactAccountCmmdCtrl = new ContactAccountCommandController();
+
+        $contactAccountCmmdCtrl->store(45544433, 'contactAccountCmmdCtrl@updateMethodTest1');
+
+
+        $fromDatabase = $contactAccountCmmdCtrl->repository->getContactAccountByNickname(45544433,'contactAccountCmmdCtrl@updateMethodTest1');
+        $this->assertEquals('contactAccountCmmdCtrl@updateMethodTest1', $fromDatabase->nickname);
+
+        //update it by changing name with method
+        $contactAccountCmmdCtrl->update($fromDatabase->id, 'contactAccountCmmdCtrl@updateMethodTest2');
+
+        //prove the name has changed
+        $afterUpdate = $contactAccountCmmdCtrl->show($fromDatabase->id);
+
+        $this->assertEquals('contactAccountCmmdCtrl@updateMethodTest2', $afterUpdate->nickname);
+
+        $this->assertEquals('No Contact Account by that id', $contactAccountCmmdCtrl->update('aabksdk', 'something'));
     }
 
     public function test_ContactAccountCmmdCtrl_destroy_method_deletes_a_contactAccount_resource_from_DB()
