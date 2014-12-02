@@ -9,6 +9,8 @@
 namespace App\MyStuff\ContactAccount;
 
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
 class ContactAccountCommandController {
 
 

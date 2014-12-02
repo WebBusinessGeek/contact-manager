@@ -56,6 +56,9 @@ class ContactAccountCommandControllerTest extends \TestCase{
         $this->assertEquals(2, $contactAccount2->id);
 
 
+        $this->assertEquals('No Contact Account by that id', $contactAccountCmmdCtrl->show('absjdlkfjwe'));
+
+
     }
 
     public function test_ContactAccountCmmdCtrl_update_method_changes_a_contactAccount_resource_stored_in_the_DB_table()
