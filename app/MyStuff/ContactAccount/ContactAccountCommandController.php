@@ -83,7 +83,7 @@ class ContactAccountCommandController {
 
         $account = $this->show($account_id); DONE
 
-        return $this->validator->isAContactAccount($account) DONE ? $this->invoker->updateContactAccount($account) : $account; DONE
+        return $this->validator->isAContactAccount($account) DONE ? $this->repository->softSave($this->invoker->updateContactAccount($account)) : $account; DONE
 
          * */
     }

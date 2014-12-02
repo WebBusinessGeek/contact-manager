@@ -54,4 +54,15 @@ class ContactAccountRepository {
         return ContactAccount::findOrFail($account_id);
     }
 
+
+    /**Quickly saves a contactAccount to the contactAccounts database table.
+     * @param ContactAccount $contactAccount
+     * @return string
+     */
+    public function softSave(ContactAccount $contactAccount)
+    {
+        $contactAccount->save();
+        return 'Updated';
+    }
+
 }

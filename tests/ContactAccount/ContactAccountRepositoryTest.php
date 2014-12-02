@@ -73,4 +73,25 @@ class ContactAccountRepositoryTest extends \TestCase {
         $this->assertEquals(1, $contactAccount->id);
     }
 
+
+    public function test_contactAccountRepository_softSave_method_saves_a_contactAccount_instance_to_database()
+    {
+        $contactAccountRepo = new ContactAccountRepository();
+
+        $contactAccount = new ContactAccount();
+
+        $contactAccount->nickname = 'contactAccountRepository@softSaveMethodTest1';
+        $contactAccount->user_id = 4557555;
+
+
+        $contactAccountRepo->softSave($contactAccount);
+
+
+        $fromDatabase = $contactAccountRepo->getContactAccountByNickname(4557555,'contactAccountRepository@softSaveMethodTest1');
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($fromDatabase));
+        $this->assertEquals('contactAccountRepository@softSaveMethodTest1', $fromDatabase->nickname);
+
+    }
+
 }
