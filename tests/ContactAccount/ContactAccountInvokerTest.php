@@ -30,7 +30,7 @@ class ContactAccountInvokerTest extends \TestCase{
     }
 
 
-    public function test_contactAccountInvoker_deleteContactAccount_method_deletes_a_contactAccount_resource_or_sends_error_message()
+    public function test_contactAccountInvoker_deleteContactAccount_method_deletes_a_contactAccount_resource()
     {
         $contactAccountInvoker = new ContactAccountInvoker();
 
@@ -50,5 +50,24 @@ class ContactAccountInvokerTest extends \TestCase{
         $this->assertEquals(null, $afterDeleteContact);
     }
 
+
+    public function test_contactAccountInvoker_changeContactAccountNickname_method_changes_a_contactAccount_resources_nickname()
+    {
+        $contactAccountInvoker = new ContactAccountInvoker();
+
+        $contactAccountRepo = new ContactAccountRepository();
+
+        $contactAccount = new ContactAccount();
+
+        $contactAccountRepo->storeContactAccount(35543,$contactAccountInvoker->addNicknameToContactAccount($contactAccount, 'contactAccountInvoker@updateContactAccountTest1'));
+
+        $storedContactAccount = $contactAccountRepo->getContactAccountByNickname(35543,'contactAccountInvoker@updateContactAccountTest1');
+
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($storedContactAccount));
+
+        $contactAccountInvoker->changeContactAccountNickname($storedContactAccount, 'contactAccountInvoker@updateContactAccountTest2');
+
+       $this->assertEquals('contactAccountInvoker@updateContactAccountTest2', $storedContactAccount->nickname);
+    }
 
 }

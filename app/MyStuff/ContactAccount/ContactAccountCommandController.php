@@ -77,9 +77,15 @@ class ContactAccountCommandController {
         }
     }
 
-    public function update()
+    public function update($account_id)
     {
+        /*
 
+        $account = $this->show($account_id); DONE
+
+        return $this->validator->isAContactAccount($account) DONE ? $this->invoker->updateContactAccount($account) : $account; DONE
+
+         * */
     }
 
     /**Deletes a ContactAccount resource from the contactAccounts DB table.

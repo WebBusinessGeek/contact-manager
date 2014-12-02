@@ -24,10 +24,27 @@ class ContactAccountInvoker {
         return $contactAccount;
     }
 
+    /**Deletes a contactAccount instance from the database.
+     * @param ContactAccount $contactAccount
+     * @return string
+     * @throws \Exception
+     */
     public function deleteContactAccount(ContactAccount $contactAccount)
     {
         $contactAccount->delete();
         return 'Deleted';
+    }
+
+
+    /**Changes a ContactAccount instance's nickname.
+     * @param ContactAccount $contactAccount
+     * @param $newNickname
+     * @return ContactAccount
+     */
+    public function changeContactAccountNickname(ContactAccount $contactAccount, $newNickname)
+    {
+        $contactAccount->nickname = $newNickname;
+        return $contactAccount;
     }
 
 }
