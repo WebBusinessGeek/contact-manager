@@ -9,6 +9,33 @@
 namespace App\MyStuff\ContactAccount;
 
 
-class ContactAccountInternalService {
+class ContactAccountInternalService implements ContactAccountInternalServiceInterface {
+
+    public function index($user_id)
+    {
+
+    }
+
+    public function store($user_id, $name)
+    {
+
+    }
+
+
+    public function show($account_id)
+    {
+
+    }
+
+    public function update($account_id, $newNickname)
+    {
+
+    }
+
+    public function destroy($account_id)
+    {
+
+    }
+
 
 }
