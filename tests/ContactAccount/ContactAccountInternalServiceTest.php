@@ -42,4 +42,23 @@ class ContactAccountInternalServiceTest extends \TestCase {
         $this->assertEquals(38898811, $contactAccounts[0]->user_id);
         $this->assertEquals('No accounts associated with that user', $contactAccountInternalService->index('asdf3943fsdkf'));
     }
+
+    public function test_contactAccountInternalService_store_method_stores_a_contact_in_the_database_table()
+    {
+
+        $contactAccountInternalService = new ContactAccountInternalService();
+
+
+        $contactAccountInternalService->store(85545594, 'contactAccountInternalService@storeMethodTest1');
+
+
+        $afterStoreContactAccount = $contactAccountInternalService->commandController
+            ->repository->getContactAccountByNickname(85545594, 'contactAccountInternalService@storeMethodTest1');
+
+
+        $this->assertEquals(85545594, $afterStoreContactAccount->user_id);
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($afterStoreContactAccount));
+        $this->assertEquals('contactAccountInternalService@storeMethodTest1', $afterStoreContactAccount->nickname);
+    }
+
 }

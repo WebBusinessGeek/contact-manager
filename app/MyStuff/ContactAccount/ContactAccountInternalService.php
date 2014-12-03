@@ -28,11 +28,15 @@ class ContactAccountInternalService implements ContactAccountInternalServiceInte
         return $this->commandController->index($user_id);
     }
 
-    
 
+    /**Creates and stores a new ContactAccount resource in the contactAccounts database table.
+     * @param $user_id
+     * @param $name
+     * @return mixed
+     */
     public function store($user_id, $name)
     {
-
+        return $this->commandController->store($user_id, $name);
     }
 
 
