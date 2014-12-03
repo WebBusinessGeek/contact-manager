@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ContactAccount/ContactAccountInternalServiceTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalService.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalServiceInterface.php" afterPath="$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalServiceInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
@@ -31,36 +31,18 @@
     <favorites_list name="contactmgr2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="ContactAccountInternalService.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalService.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5683453" vertical-offset="330" max-vertical-offset="1025">
-                  <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ContactAccountInternalServiceInterface.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalServiceInterface.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5755396" vertical-offset="0" max-vertical-offset="695">
-                  <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="ContactAccountInternalService.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.64028776" vertical-offset="180" max-vertical-offset="1375">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -218,15 +200,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -261,13 +243,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -292,13 +274,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.252616" vertical-offset="14377" max-vertical-offset="34050">
-          <caret line="381" column="41" selection-start-line="381" selection-start-column="32" selection-end-line="381" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/local/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="695">
@@ -629,43 +604,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalServiceInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5755396" vertical-offset="0" max-vertical-offset="695">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountCommandController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42446044" vertical-offset="655" max-vertical-offset="2525">
           <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalServiceInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.107913665" vertical-offset="0" max-vertical-offset="695">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountInternalServiceTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7122302" vertical-offset="355" max-vertical-offset="1075">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding>
-            <marker date="1417556345000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder=" @param $user_id ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder=" @param $account_id ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder=" @param $account_id ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder=" @param $account_id ..." />
-            <marker date="1417556345000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417629936000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417629936000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417629936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417629936000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417629936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417629936000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactAccount/ContactAccountInternalService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5683453" vertical-offset="330" max-vertical-offset="1025">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.64028776" vertical-offset="180" max-vertical-offset="1375">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>

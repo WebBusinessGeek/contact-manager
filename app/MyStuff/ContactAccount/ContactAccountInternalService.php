@@ -11,10 +11,24 @@ namespace App\MyStuff\ContactAccount;
 
 class ContactAccountInternalService implements ContactAccountInternalServiceInterface {
 
+    public $commandController;
+
+    function __construct()
+    {
+        $this->commandController = new ContactAccountCommandController();
+    }
+
+
+    /**Returns a collection of contactAccount resources associated with the user_id passed in, otherwise an error message.
+     * @param $user_id
+     * @return mixed
+     */
     public function index($user_id)
     {
-
+        return $this->commandController->index($user_id);
     }
+
+    
 
     public function store($user_id, $name)
     {
