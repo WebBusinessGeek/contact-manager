@@ -15,12 +15,26 @@ class UserCommandController {
 
     public function index()
     {
+        /*
 
+
+
+         * */
     }
 
     public function store()
     {
+        /*
 
+        check attributes for validation
+        - If valid
+            - create a new user instance
+            - add necessary attributes to instance
+            - store it in database
+            - return stored feedback
+        - If invalid
+            - return error message
+         * */
     }
 
     public function show()
