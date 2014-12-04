@@ -61,4 +61,27 @@ class ContactAccountInternalServiceTest extends \TestCase {
         $this->assertEquals('contactAccountInternalService@storeMethodTest1', $afterStoreContactAccount->nickname);
     }
 
+    public function test_contactAccountInternalService_show_method_retrieves_specified_contactAccount_or_gives_error_message()
+    {
+        //create a contactAccount
+        $contactAccountInternalService = new ContactAccountInternalService();
+
+        $contactAccountInternalService->store(40349, 'contactAccountInternalService@showMethodTest1');
+
+        //retrieve it by name to get the id
+        $contactAccount = $contactAccountInternalService->commandController->
+        repository->getContactAccountByNickname(40349, 'contactAccountInternalService@showMethodTest1');
+
+        //call the show method using the id
+        $contactAccountFromShowMethod = $contactAccountInternalService->show($contactAccount->id);
+
+        //assert its name, class, and user_id
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccountFromShowMethod));
+        $this->assertEquals('contactAccountInternalService@showMethodTest1', $contactAccountFromShowMethod->nickname);
+        $this->assertEquals(40349, $contactAccountFromShowMethod->user_id);
+
+        //call show method on bad id - and assert the result is an error message
+        $this->assertEquals('No Contact Account by that id', $contactAccountInternalService->show('asdfasdfewer'));
+    }
+
 }

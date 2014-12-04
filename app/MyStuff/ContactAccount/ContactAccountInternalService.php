@@ -40,11 +40,17 @@ class ContactAccountInternalService implements ContactAccountInternalServiceInte
     }
 
 
+    /**Retrieves a specified ContactAccount resource, otherwise returns an error message.
+     * @param $account_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed
+     */
     public function show($account_id)
     {
-
+        return $this->commandController->show($account_id);
     }
 
+
+    
     public function update($account_id, $newNickname)
     {
 
