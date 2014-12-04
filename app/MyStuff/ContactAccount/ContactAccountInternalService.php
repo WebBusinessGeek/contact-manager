@@ -60,10 +60,14 @@ class ContactAccountInternalService implements ContactAccountInternalServiceInte
         return $this->commandController->update($account_id, $newNickname);
     }
 
-    
+
+    /**Deletes a ContactAccount instance from the database table if it exists, otherwise will return an error message.
+     * @param $account_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed|string
+     */
     public function destroy($account_id)
     {
-
+        return $this->commandController->destroy($account_id);
     }
 
 

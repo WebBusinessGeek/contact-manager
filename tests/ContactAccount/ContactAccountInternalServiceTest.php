@@ -111,4 +111,29 @@ class ContactAccountInternalServiceTest extends \TestCase {
         $this->assertEquals('No Contact Account by that id', $contactAccountInternalService->update('skdjfweirwo', 'wont go through'));
     }
 
+
+    public function test_contactAccountInternalService_destroy_method_deletes_a_contactAccount_instance_from_the_database_table()
+    {
+        //create a contactAccount
+        $contactAccountInternalService = new ContactAccountInternalService();
+
+        $contactAccountInternalService->store(450097, 'contactAccountInternalService@destroyMethodTest1');
+
+        //retrieve it and assert its nickname, and user_id to prove its in the database
+        $contactAccountPreDelete = $contactAccountInternalService->commandController->repository->getContactAccountByNickname(450097,'contactAccountInternalService@destroyMethodTest1');
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccountPreDelete));
+        $this->assertEquals('contactAccountInternalService@destroyMethodTest1', $contactAccountPreDelete->nickname);
+        $this->assertEquals(450097, $contactAccountPreDelete->user_id);
+
+        //call the destroy method on its id
+        $contactAccountInternalService->destroy($contactAccountPreDelete->id);
+
+        //attempt to retrieve it again by its id - prove its no longer in the database
+        $contactAccountPostDelete = $contactAccountInternalService->show($contactAccountPreDelete->id);
+        $this->assertEquals('No Contact Account by that id', $contactAccountPostDelete);
+
+        //call the destroy method on a bad id - assert the result is an error message
+        $this->assertEquals('No Contact Account by that id' , $contactAccountInternalService->destroy('adsfdweir'));
+    }
+
 }
