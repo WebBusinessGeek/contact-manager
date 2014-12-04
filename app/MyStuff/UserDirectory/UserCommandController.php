@@ -11,4 +11,43 @@ namespace App\MyStuff\UserDirectory;
 
 class UserCommandController {
 
+
+
+    public function index()
+    {
+
+    }
+
+    public function store()
+    {
+
+    }
+
+    public function show()
+    {
+
+    }
+
+    public function update()
+    {
+
+    }
+
+    public function destroy()
+    {
+
+    }
+
+    public function login()
+    {
+
+    }
+
+    public function logout()
+    {
+
+    }
+
+
+
 }
