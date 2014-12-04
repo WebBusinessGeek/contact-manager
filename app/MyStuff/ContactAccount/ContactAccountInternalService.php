@@ -50,12 +50,17 @@ class ContactAccountInternalService implements ContactAccountInternalServiceInte
     }
 
 
-    
+    /**Updates a ContactAccounts nickname if contactAccount instance exists in database table, otherwise returns an error message.
+     * @param $account_id
+     * @param $newNickname
+     * @return \Illuminate\Database\Eloquent\Collection|mixed|string
+     */
     public function update($account_id, $newNickname)
     {
-
+        return $this->commandController->update($account_id, $newNickname);
     }
 
+    
     public function destroy($account_id)
     {
 

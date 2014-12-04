@@ -84,4 +84,31 @@ class ContactAccountInternalServiceTest extends \TestCase {
         $this->assertEquals('No Contact Account by that id', $contactAccountInternalService->show('asdfasdfewer'));
     }
 
+
+
+    public function test_contactAccountInternalService_update_method_updates_the_nickname_of_specified_contactAccount()
+    {
+        //create a contactAccount
+        $contactAccountInternalService = new ContactAccountInternalService();
+
+        $contactAccountInternalService->store(880990, 'contactAccountInternalService@updateMethodTest1');
+
+        //retrieve it by name to get the id
+        $contactAccountPreUpdate = $contactAccountInternalService->commandController->repository->getContactAccountByNickname(880990, 'contactAccountInternalService@updateMethodTest1');
+
+        //call the update method on it with the id
+        $contactAccountInternalService->update($contactAccountPreUpdate->id,'contactAccountInternalService@updateMethodTest2');
+
+        //retrieve it with show
+        $contactAccountPostUpdate = $contactAccountInternalService->show($contactAccountPreUpdate->id);
+
+        //assert its name, class, and user_id
+        $this->assertEquals('App\MyStuff\ContactAccount\ContactAccount', get_class($contactAccountPostUpdate));
+        $this->assertEquals('contactAccountInternalService@updateMethodTest2', $contactAccountPostUpdate->nickname);
+        $this->assertEquals(880990, $contactAccountPostUpdate->user_id);
+
+        //call update on bad id - assert the result is an error message
+        $this->assertEquals('No Contact Account by that id', $contactAccountInternalService->update('skdjfweirwo', 'wont go through'));
+    }
+
 }
