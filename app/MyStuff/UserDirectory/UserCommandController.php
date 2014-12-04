@@ -22,18 +22,24 @@ class UserCommandController {
          * */
     }
 
-    public function store()
+    public function store($email, $password)
     {
         /*
 
-        check attributes for validation
-        - If valid
-            - create a new user instance
-            - add necessary attributes to instance
-            - store it in database
-            - return stored feedback
-        - If invalid
-            - return error message
+        check attributes for validation (email, password?)
+        $this->validator->isValidEmailAndPassword() - CONDITION
+            - If valid
+                - create a new user instance
+                $this->factory->createNewUser()
+                - add necessary attributes to instance
+                $this->invoker->addEmailAndPasswordToUser()
+                - store it in database
+                $this->repository->saveUser()
+                - return stored feedback
+                $this->responder->sendMessage('stored')
+            - If invalid
+                - return error message
+                $this->responder->sendMessage('Invalid Email or Password format')
          * */
     }
 

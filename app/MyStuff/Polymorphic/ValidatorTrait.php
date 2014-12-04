@@ -35,10 +35,13 @@ trait ValidatorTrait {
         return true;
     }
 
+    
     public function isValidEmailFormat($emailToCheck)
     {
         return (filter_var($emailToCheck, FILTER_VALIDATE_EMAIL))? true : false ;
     }
+
+
 
     public function isValidPhoneNumberFormat($phoneNumberToCheck)
     {
@@ -61,10 +64,14 @@ trait ValidatorTrait {
     }
 
 
+
+
     public function isValidURLFormat($urlToCheck)
     {
         return (filter_var($urlToCheck, FILTER_VALIDATE_URL))? true : false ;
     }
+
+
 
 
     public function isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck)
@@ -73,10 +80,19 @@ trait ValidatorTrait {
             && $this->isValidPhoneNumberFormat($phoneNumberToCheck) == true);
     }
 
+
+
     public function isValidNumberEmailAndUrl($emailToCheck, $phoneNumberToCheck, $urlToCheck)
     {
         return ($this->isValidNumberAndEmail($emailToCheck, $phoneNumberToCheck)
             && $this->isValidURLFormat($urlToCheck) == true);
+    }
+
+
+
+    public function isValidPassword($passwordToCheck)
+    {
+        return (preg_match('/[!@#$%*a-zA-Z0-9]{8,}/',$passwordToCheck) && preg_match_all('/[0-9]/',$passwordToCheck) >= 2 && preg_match('/[\(\)\*\&\^\{\}\[\]]/', $passwordToCheck) == false);
     }
 
 

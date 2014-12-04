@@ -9,6 +9,18 @@
 namespace App\MyStuff\UserDirectory;
 
 
+use App\MyStuff\Polymorphic\ValidatorTrait;
+
 class UserValidator {
+
+    use ValidatorTrait;
+
+    public function isValidEmailAndPassword($emailToCheck, $passwordToCheck)
+    {
+//        return ($this->isValidEmailFormat($emailToCheck) && $this->isValidPassword($passwordToCheck));
+    }
+
+
+
 
 }
