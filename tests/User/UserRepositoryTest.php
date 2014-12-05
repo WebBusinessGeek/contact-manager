@@ -66,5 +66,26 @@ class UserRepositoryTest extends \TestCase {
         $this->assertEquals('App\User', get_class($users[0]));
 
     }
+
+
+    public function test_userRepository_getUserById_method_retrieves_a_user_from_database_by_its_id()
+    {
+        //user repo instance
+        $userRepo = new UserRepository();
+
+        //getUserById method
+        $realUser = $userRepo->getUserById(1);
+
+        //assert id and instance of App\User
+        $this->assertEquals(1, $realUser->id);// - PHPUNIT WILL THROW AN ERROR IF THERE ARE NO SEEDS IN USER TABLE WITH ID OF 1
+        $this->assertEquals('App\User', get_class($realUser));
+
+        //assert ModelNotFound exception
+        $this->setExpectedException('Illuminate\Database\Eloquent\ModelNotFoundException', 'No query results for model [App\User]');
+        //getUserById on bad id
+        $badUser = $userRepo->getUserById('aaabbb');
+
+
+    }
 }
 

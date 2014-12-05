@@ -51,4 +51,17 @@ class UserCommandControllerTest extends \TestCase{
         //assert its first item is of the App/User class
         $this->assertEquals('App\User', get_class($users[0]));
     }
+
+
+    public function test_userCommandController_show_method_retrieves_a_specific_user_from_users_database_table()
+    {
+
+        //userCommandController instance
+
+        //show method
+
+        //assert id and App\User instance
+
+        //show method on bad id and assert error message
+    }
 }

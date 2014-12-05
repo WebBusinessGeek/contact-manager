@@ -21,6 +21,7 @@ class UserCommandController {
 
     public $responder;
 
+
     function __construct()
     {
         $this->validator = new UserValidator();
@@ -61,7 +62,19 @@ class UserCommandController {
 
     public function show($user_id)
     {
+        /*
 
+        try
+        {
+            return $this->repository->getUserById($user_id);
+        }
+        catch(ModelNotFoundException $e)
+        {
+            return $this->responder('No user by that id');
+        }
+
+
+         * */
     }
 
     public function update()

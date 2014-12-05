@@ -44,4 +44,15 @@ class UserRepository {
         return User::all();
     }
 
+
+    /**
+     * Retrieve a User instance from users database table by its id. 
+     * @param $user_id
+     * @return Collection
+     */
+    public function getUserById($user_id)
+    {
+        return User::findOrFail($user_id);
+    }
+
 }
