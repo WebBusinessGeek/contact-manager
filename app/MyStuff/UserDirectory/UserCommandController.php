@@ -27,7 +27,7 @@ class UserCommandController {
         /*
 
         check attributes for validation (email, password?)
-        $this->validator->isValidEmailAndPassword() - CONDITION
+        $this->validator->isValidEmailAndPassword() - DONE
             - If valid
                 - create a new user instance
                 $this->factory->createNewUser()

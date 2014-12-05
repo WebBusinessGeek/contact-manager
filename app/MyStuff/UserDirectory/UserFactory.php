@@ -9,6 +9,13 @@
 namespace App\MyStuff\UserDirectory;
 
 
+use App\User;
+
 class UserFactory {
+
+    public function createNewUser()
+    {
+        return new User();
+    }
 
 }
