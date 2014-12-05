@@ -11,6 +11,24 @@ namespace App\MyStuff\UserDirectory;
 
 class UserCommandController {
 
+    public $validator;
+
+    public $factory;
+
+    public $invoker;
+
+    public $repository;
+
+    public $responder;
+
+    function __construct()
+    {
+        $this->validator = new UserValidator();
+        $this->factory = new UserFactory();
+        $this->invoker = new UserInvoker();
+        $this->repository = new UserRepository();
+        $this->responder = new UserResponder();
+    }
 
 
     public function index()
@@ -22,25 +40,22 @@ class UserCommandController {
          * */
     }
 
+    /**
+     * If valid email and password function creates & stores a User instance in the users database table, otherwise returns an error message.
+     * @param $email
+     * @param $password
+     * @return mixed
+     */
     public function store($email, $password)
     {
-        /*
+        if ($this->validator->isValidEmailAndPassword($email, $password))
+        {
+            $this->repository->
+            saveUser($this->invoker->addEmailAndPasswordToUser($this->factory->createNewUser(),$email, $password));
 
-        check attributes for validation (email, password?)
-        $this->validator->isValidEmailAndPassword() - DONE
-            - If valid
-                - create a new user instance
-                $this->factory->createNewUser() - DONE
-                - add necessary attributes to instance
-                $this->invoker->addEmailAndPasswordToUser() - DONE
-                - store it in database
-                $this->repository->saveUser() -
-                - return stored feedback
-                $this->responder->sendMessage('stored') - DONE
-            - If invalid
-                - return error message
-                $this->responder->sendMessage('Invalid Email or Password format') - DONE
-         * */
+            return $this->responder->sendMessage('Stored new user');
+        }
+        return $this->responder->sendMessage('Invalid Email or Password format');
     }
 
     public function show()

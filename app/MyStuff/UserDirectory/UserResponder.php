@@ -9,6 +9,10 @@
 namespace App\MyStuff\UserDirectory;
 
 
+use App\MyStuff\Polymorphic\ResponderTrait;
+
 class UserResponder {
+
+    use ResponderTrait;
 
 }
