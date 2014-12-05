@@ -9,6 +9,8 @@
 namespace App\MyStuff\UserDirectory;
 
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
 class UserCommandController {
 
     public $validator;
@@ -60,21 +62,21 @@ class UserCommandController {
         return $this->responder->sendMessage('Invalid Email or Password format');
     }
 
+    /**
+     * If $user_id exists method will retrieve a User Instance from the users table by its id, otherwise sends an error message.
+     * @param $user_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed
+     */
     public function show($user_id)
     {
-        /*
-
         try
         {
             return $this->repository->getUserById($user_id);
         }
         catch(ModelNotFoundException $e)
         {
-            return $this->responder('No user by that id');
+            return $this->responder->sendMessage('No user by that id');
         }
-
-
-         * */
     }
 
     public function update()

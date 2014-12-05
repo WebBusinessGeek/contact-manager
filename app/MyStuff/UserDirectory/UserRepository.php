@@ -46,7 +46,7 @@ class UserRepository {
 
 
     /**
-     * Retrieve a User instance from users database table by its id. 
+     * Retrieve a User instance from users database table by its id.
      * @param $user_id
      * @return Collection
      */

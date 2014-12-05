@@ -57,11 +57,16 @@ class UserCommandControllerTest extends \TestCase{
     {
 
         //userCommandController instance
+        $userCommandController = new UserCommandController();
 
         //show method
+        $realUser = $userCommandController->show(1);
 
         //assert id and App\User instance
+        $this->assertEquals(1, $realUser->id); // - PHPUNIT WILL THROW ERROR IF NO SEED IN USERS TABLE HAS AN IDEA OF 1.
+        $this->assertEquals('App\User', get_class($realUser));
 
         //show method on bad id and assert error message
+        $this->assertEquals('No user by that id', $userCommandController->show('aaabbb'));
     }
 }
