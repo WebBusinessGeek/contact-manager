@@ -7,7 +7,6 @@
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" afterPath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
           <file leaf-file-name="UserValidator.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46043167" vertical-offset="930" max-vertical-offset="2225">
-                  <caret line="55" column="86" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
+                <state vertical-scroll-proportion="0.32374102" vertical-offset="825" max-vertical-offset="2025">
+                  <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="49" selection-end-column="62" />
                   <folding />
                 </state>
               </provider>
@@ -51,8 +50,8 @@
           <file leaf-file-name="UserValidatorTest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9640288" vertical-offset="5905" max-vertical-offset="7025">
-                  <caret line="270" column="31" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.8201439" vertical-offset="6305" max-vertical-offset="7150">
+                  <caret line="282" column="8" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -677,18 +676,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9640288" vertical-offset="5905" max-vertical-offset="7025">
-          <caret line="270" column="31" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.32374102" vertical-offset="825" max-vertical-offset="2025">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="49" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
+    <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46043167" vertical-offset="930" max-vertical-offset="2225">
-          <caret line="55" column="86" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.8201439" vertical-offset="6305" max-vertical-offset="7150">
+          <caret line="282" column="8" selection-start-line="282" selection-start-column="8" selection-end-line="282" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -45,17 +45,9 @@ class UserValidator {
 
     public function isValidAttributes($newAttributes = array())
     {
-        /*
-
-        check if newAttribute length is same length as allowed attributes
-        $this->matchesArrayLength($newAttributes, $this->allowedAttributes)  - DONE
-
-        check if newAttribute keys contains all allowedAttributes keys - make this extensible
-        $this->matchesArrayKeys($newAttributes, $this->allowedAttributes) - DONE
-
-        check if newAttribute values are in valid format - make this extensible - DONE
-         * */
-
+//        return($this->matchesArrayLength($newAttributes, $this->allowedAttributes) &&
+//                $this->matchesArrayKeys($newAttributes, $this->allowedAttributes) &&
+//                $this->isValidFormatLooper($newAttributes));
     }
 
     /**

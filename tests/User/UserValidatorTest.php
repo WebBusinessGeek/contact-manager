@@ -276,7 +276,12 @@ class UserValidatorTest extends \TestCase {
         $this->assertFalse($userValidation->isValidFormatLooper($badArray1));
         $this->assertFalse($userValidation->isValidFormatLooper($badArray2));
 
-
     }
+
+    public function test_userValidator_isValidaAttributes_method_accurately_checks_if_values_are_acceptable()
+    {
+        
+    }
+
 
 }
