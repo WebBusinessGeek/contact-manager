@@ -35,7 +35,7 @@ class UserCommandController {
     {
         /*
         return all users in users database table
-        return $this->repository->getAllUsers();
+        return $this->repository->getAllUsers(); - DONE
 
 
          * */
@@ -61,7 +61,7 @@ class UserCommandController {
 
     public function show($user_id)
     {
-        
+
     }
 
     public function update()

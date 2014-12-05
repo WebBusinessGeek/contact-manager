@@ -4,6 +4,7 @@ use App\MyStuff\ContactDirectory\Contact;
 use App\MyStuff\ContactDirectory\ContactRepository;
 use App\MyStuff\OptionReturner\OptionReturnerCommandController;
 use App\MyStuff\OptionReturner\OptionReturnerInternalService;
+use App\MyStuff\UserDirectory\UserRepository;
 use Illuminate\Database\DatabaseManager as DB;
 
 class HomeController extends Controller {
@@ -24,12 +25,14 @@ class HomeController extends Controller {
 	public function index()
 	{
 
-//		$contactRepo = new ContactRepository();
+//		//new repo
+//		$userRepo = new UserRepository();
 //
-//		$contact = $contactRepo->getContactByName(3, 'Gwendolyn Rice');
 //
-//		dd($contact);
-
+//		//call getAllUsers
+//		$users = $userRepo->getAllUsers();
+//
+//		dd($users[0]->email);
 
 
 

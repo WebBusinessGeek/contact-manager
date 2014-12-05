@@ -36,4 +36,15 @@ class UserCommandControllerTest extends \TestCase{
         //call store method on bad password and assert error message
         $this->assertEquals('Invalid Email or Password format', $userCommmandController->store('good@email.com', 'invalid'));
     }
+
+    public function test_userCommandController_index_method_retrieves_all_users_from_users_database_table()
+    {
+        //new commandController
+
+        //call index method
+
+        //assert its a collection
+
+        //assert its first item is of the App/User class
+    }
 }

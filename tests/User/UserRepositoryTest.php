@@ -14,6 +14,7 @@ use App\MyStuff\UserDirectory\UserRepository;
 use App\User;
 use Illuminate\Foundation\Testing\TestCase;
 
+
 class UserRepositoryTest extends \TestCase {
 
     public function test_userRepository_saveUser_method_saves_user_instance_to_users_database_table()
@@ -48,6 +49,22 @@ class UserRepositoryTest extends \TestCase {
         $this->assertEquals('userRepository@getUserByEmailMethodTest1', $userFromDB->email);
 
         $userFromDB->destroy($userFromDB->id);
+    }
+
+    public function test_userRepository_getAllUsers_method_retrieves_all_users_from_users_database_table()
+    {
+        //new repo
+        $userRepo = new UserRepository();
+
+        //call getAllUsers
+        $users = $userRepo->getAllUsers();
+
+        //assert a collection
+        $this->assertEquals('Illuminate\Database\Eloquent\Collection', get_class($users));
+
+        //assert first item is App\User class
+        $this->assertEquals('App\User', get_class($users[0]));
+
     }
 }
 

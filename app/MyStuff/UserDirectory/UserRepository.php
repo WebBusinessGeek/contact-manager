@@ -11,6 +11,8 @@ namespace App\MyStuff\UserDirectory;
 
 
 use App\User;
+use Illuminate\Database\Eloquent\Collection;
+
 
 class UserRepository {
 
@@ -31,6 +33,15 @@ class UserRepository {
     public function getUserByEmail($email)
     {
         return User::where('email', '=', $email)->first();
+    }
+
+    /**
+     * Retrieves all User instances from users database table.
+     * @return Collection|static[]
+     */
+    public function getAllUsers()
+    {
+        return User::all();
     }
 
 }

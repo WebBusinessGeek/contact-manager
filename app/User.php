@@ -17,6 +17,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $table = 'users';
 
+//	protected $visible = 'email';
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
