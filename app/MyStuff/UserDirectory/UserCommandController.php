@@ -34,7 +34,8 @@ class UserCommandController {
     public function index()
     {
         /*
-
+        return all users in users database table
+        return $this->repository->getAllUsers();
 
 
          * */
@@ -58,9 +59,9 @@ class UserCommandController {
         return $this->responder->sendMessage('Invalid Email or Password format');
     }
 
-    public function show()
+    public function show($user_id)
     {
-
+        
     }
 
     public function update()
