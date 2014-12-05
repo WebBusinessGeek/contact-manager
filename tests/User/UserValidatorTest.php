@@ -193,11 +193,58 @@ class UserValidatorTest extends \TestCase {
         $this->assertFalse($userValidator->matchesArrayLength($arrayOf5, $arrayOf6));
     }
 
-    public function test_userValidator_isValidKey_method_checks_if_passed_in_array_matches_all_keys_on_allowedAttributes_property()
+    public function test_userValidator_matchesArrayKeys_method_checks_if_passed_in_array_matches_all_keys_on_second_array()
     {
         //validator instance
+        $userValidator = new UserValidator();
 
-        //good array
+        //arrays
+        $array1 = [
+            'one' => 1,
+
+            'twos' => 2,
+
+            'three' => 3
+        ];
+
+        $array2 = [
+            'one' => 3,
+
+            'twos' => 2,
+
+            'three' => 1
+        ];
+
+        $array3 = [
+            'threes' => 3,
+
+            'twos' => 2,
+
+            'ones' => 1
+        ];
+
+        $array4 = [
+            'threes' => 1,
+
+            'twos' => 2,
+
+            'ones' =>1
+        ];
+
+        //assert true
+        $this->assertTrue($userValidator->matchesArrayKeys($array1, $array2));
+        $this->assertTrue($userValidator->matchesArrayKeys($array3, $array4));
+
+        //assert false
+        $this->assertFalse($userValidator->matchesArrayKeys($array1, $array3));
+        $this->assertFalse($userValidator->matchesArrayKeys($array2, $array4));
     }
+
+//    public function test_userValidator_isValidFormatLooper_method_dynamically_checks_values_of_attributes_passed_in()
+//    {
+//        //validator instance
+//
+//        //
+//    }
 
 }
