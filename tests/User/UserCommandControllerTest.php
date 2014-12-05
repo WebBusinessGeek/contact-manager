@@ -40,11 +40,15 @@ class UserCommandControllerTest extends \TestCase{
     public function test_userCommandController_index_method_retrieves_all_users_from_users_database_table()
     {
         //new commandController
+        $userCommandController = new UserCommandController();
 
         //call index method
+        $users = $userCommandController->index();
 
         //assert its a collection
+        $this->assertEquals('Illuminate\Database\Eloquent\Collection', get_class($users));
 
         //assert its first item is of the App/User class
+        $this->assertEquals('App\User', get_class($users[0]));
     }
 }

@@ -31,15 +31,15 @@ class UserCommandController {
     }
 
 
+    /**
+     * Retrieves all User instances from users database table.
+     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     */
     public function index()
     {
-        /*
-        return all users in users database table
-        return $this->repository->getAllUsers(); - DONE
-
-
-         * */
+        return $this->repository->getAllUsers();
     }
+
 
     /**
      * If valid email and password function creates & stores a User instance in the users database table, otherwise returns an error message.
