@@ -96,4 +96,14 @@ trait ValidatorTrait {
     }
 
 
+    /**Returns true if arrays match, otherwise false.
+     * @param array $arrayToCheck
+     * @param array $arrayToMatch
+     * @return bool
+     */
+    public function matchesArrayLength($arrayToCheck = array(), $arrayToMatch = array())
+    {
+        return (count($arrayToCheck) == count($arrayToMatch));
+    }
+
 }

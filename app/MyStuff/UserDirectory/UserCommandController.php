@@ -45,7 +45,7 @@ class UserCommandController {
 
 
     /**
-     * If valid email and password function creates & stores a User instance in the users database table, otherwise returns an error message.
+     * If valid email and password, function creates & stores a User instance in the users database table, otherwise returns an error message.
      * @param $email
      * @param $password
      * @return mixed
@@ -63,7 +63,7 @@ class UserCommandController {
     }
 
     /**
-     * If $user_id exists method will retrieve a User Instance from the users table by its id, otherwise sends an error message.
+     * If $user_id exists, method will retrieve a User Instance from the users table by its id, otherwise sends an error message.
      * @param $user_id
      * @return \Illuminate\Database\Eloquent\Collection|mixed
      */
@@ -79,9 +79,22 @@ class UserCommandController {
         }
     }
 
-    public function update()
+    public function update($user_id, $newAttributes = array())
     {
+        /*
 
+        $user = $this->show($user_id); - DONE
+
+        check if $user is a User or an error message - DONE && check if $newAttributes are valid - Not Done
+
+            - if user && attributes are valid
+                - $this->invoker->addNewAttributesToUser($user, $newAttributes) - Not Done
+                - $this->repository->saveUser($user) - DONE
+                - return $this->responder->sendMessage('Updated') - DONE
+            - if false
+                - return $this->responder->sendMessage('User cannot be updated.') - DONE
+
+         * */
     }
 
     public function destroy()
