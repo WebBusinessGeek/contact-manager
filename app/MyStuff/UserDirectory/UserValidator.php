@@ -15,6 +15,12 @@ class UserValidator {
 
     use ValidatorTrait;
 
+    /**
+     * Returns true if email and password passed in are valid, otherwise false.
+     * @param $emailToCheck
+     * @param $passwordToCheck
+     * @return bool
+     */
     public function isValidEmailAndPassword($emailToCheck, $passwordToCheck)
     {
         return ($this->isValidEmailFormat($emailToCheck) && $this->isValidPassword($passwordToCheck));

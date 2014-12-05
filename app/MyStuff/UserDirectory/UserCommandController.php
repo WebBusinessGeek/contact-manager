@@ -30,7 +30,7 @@ class UserCommandController {
         $this->validator->isValidEmailAndPassword() - DONE
             - If valid
                 - create a new user instance
-                $this->factory->createNewUser()
+                $this->factory->createNewUser() - DONE
                 - add necessary attributes to instance
                 $this->invoker->addEmailAndPasswordToUser()
                 - store it in database

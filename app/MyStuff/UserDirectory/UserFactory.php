@@ -13,6 +13,10 @@ use App\User;
 
 class UserFactory {
 
+    /**
+     * Returns a new User instance.
+     * @return User
+     */
     public function createNewUser()
     {
         return new User();
