@@ -40,4 +40,51 @@ class UserValidatorTest extends \TestCase {
         $this->assertFalse($userValidator->isValidPassword($badPassword3));
     }
 
+    public function test_userValidator_isValidEmailAndPassword_method_returns_boolean_if_passed_in_email_and_password_follows_guidelines()
+    {
+        $userValidator = new UserValidator();
+
+        //goodArrays
+        $good1 = [
+            'email' => 'someEmail@email.com',
+            'password' => '!@#$$%12SDFEWEseldfis32398'
+        ];
+
+        $good2 = [
+            'email' => 'someEmail@gmail.edu',
+            'password' => 'HappyJoyJoy232328sdfjsl!##'
+        ];
+
+        $good3 = [
+            'email' => 'another@kmail.edu',
+            'password' => 'Qasldfuwe2392480d%%@#'
+        ];
+
+        //bad arrays
+        $bad1 = [
+            'email' => 'email.com',
+            'password' => '!@#$$%12SDFEWEseldfis32398'
+        ];
+
+        $bad2 = [
+            'email' => 'some@email.com',
+            'password' => 'noNumbers'
+        ];
+
+        $bad3 = [
+            'email' => 'some@email.com',
+            'password' => 'short1'
+        ];
+
+        //assert good groups
+        $this->assertTrue($userValidator->isValidEmailAndPassword($good1['email'], $good1['password']));
+        $this->assertTrue($userValidator->isValidEmailAndPassword($good2['email'], $good2['password']));
+        $this->assertTrue($userValidator->isValidEmailAndPassword($good3['email'], $good3['password']));
+
+        //assert bad groups
+        $this->assertFalse($userValidator->isValidEmailAndPassword($bad1['email'], $bad1['password']));
+        $this->assertFalse($userValidator->isValidEmailAndPassword($bad2['email'], $bad2['password']));
+        $this->assertFalse($userValidator->isValidEmailAndPassword($bad3['email'], $bad3['password']));
+    }
+
 }

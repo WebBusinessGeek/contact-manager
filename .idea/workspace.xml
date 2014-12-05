@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php" afterPath="$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" afterPath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="UserValidatorTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32374102" vertical-offset="375" max-vertical-offset="1075">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.3913669" vertical-offset="1453" max-vertical-offset="2250">
+              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -697,20 +694,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68345326" vertical-offset="0" max-vertical-offset="695">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.53956836" vertical-offset="0" max-vertical-offset="695">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <marker date="1417737301000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417737301000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417737301000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417737950000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417737950000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417737950000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32374102" vertical-offset="375" max-vertical-offset="1075">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.3913669" vertical-offset="1453" max-vertical-offset="2250">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
           <folding />
         </state>
       </provider>

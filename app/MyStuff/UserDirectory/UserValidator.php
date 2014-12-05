@@ -17,7 +17,7 @@ class UserValidator {
 
     public function isValidEmailAndPassword($emailToCheck, $passwordToCheck)
     {
-//        return ($this->isValidEmailFormat($emailToCheck) && $this->isValidPassword($passwordToCheck));
+        return ($this->isValidEmailFormat($emailToCheck) && $this->isValidPassword($passwordToCheck));
     }
 
 
