@@ -240,11 +240,43 @@ class UserValidatorTest extends \TestCase {
         $this->assertFalse($userValidator->matchesArrayKeys($array2, $array4));
     }
 
-//    public function test_userValidator_isValidFormatLooper_method_dynamically_checks_values_of_attributes_passed_in()
-//    {
-//        //validator instance
-//
-//        //
-//    }
+    public function test_userValidator_isValidFormatLooper_method_dynamically_checks_values_of_attributes_passed_in()
+    {
+        //validator instance
+        $userValidation = new UserValidator();
+
+        //good arrays
+        $goodArray1 = [
+            'email' => 'someNewEmail@email.com',
+
+        ];
+
+        $goodArray2 = [
+            'email' => 'anotherEmail@email.com',
+
+            'uRL' => 'http://thispage.com'
+        ];
+
+        //arrays that will fail
+        $badArray1 = [
+            'email' => 'email.com',
+        ];
+
+        $badArray2 = [
+            'email' => 'goodEmail@email.com',
+
+            'uRL' => 'someSite.com'
+        ];
+
+        //call isValidFormatLooper method on good arrays - and assert true
+        $this->assertTrue($userValidation->isValidFormatLooper($goodArray1));
+        $this->assertTrue($userValidation->isValidFormatLooper($goodArray2));
+
+        //call isValidFormatLooper method on bad arrays - and assert false
+        $this->assertFalse($userValidation->isValidFormatLooper($badArray1));
+        $this->assertFalse($userValidation->isValidFormatLooper($badArray2));
+
+
+    }
 
 }

@@ -7,7 +7,7 @@
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" afterPath="$PROJECT_DIR$/tests/User/UserValidatorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php" afterPath="$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,12 +37,9 @@
           <file leaf-file-name="UserValidator.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.352518" vertical-offset="1130" max-vertical-offset="2100">
-                  <caret line="60" column="0" selection-start-line="60" selection-start-column="2" selection-end-line="69" selection-end-column="7" />
-                  <folding>
-                    <marker date="1417807124000" expanded="true" signature="1543:1847" placeholder="{...}" />
-                    <marker date="1417807124000" expanded="true" signature="1634:1778" placeholder="{...}" />
-                  </folding>
+                <state vertical-scroll-proportion="0.46043167" vertical-offset="930" max-vertical-offset="2225">
+                  <caret line="55" column="86" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -54,8 +51,8 @@
           <file leaf-file-name="UserValidatorTest.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4964029" vertical-offset="5530" max-vertical-offset="6225">
-                  <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="247" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.9640288" vertical-offset="5905" max-vertical-offset="7025">
+                  <caret line="270" column="31" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -273,7 +270,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -284,6 +280,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972856" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -640,22 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46043167" vertical-offset="180" max-vertical-offset="2075">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <marker date="1417195932000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder=" @param $emailToCheck ..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder=" @param array $newAttributes ..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder=" @param $possibleContact ..." />
-            <marker date="1417195932000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,33 +644,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4964029" vertical-offset="1705" max-vertical-offset="2925">
           <caret line="87" column="60" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
-          <folding>
-            <marker date="1417802586000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder=" Retrieves all User instances from users database table. ..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder=" If valid email and password, function creates &amp; stores a User instance in the users database table, otherwise returns an error message. ..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder=" If $user_id exists, method will retrieve a User Instance from the users table by its id, otherwise sends an error message. ..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417802586000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/Polymorphic/ValidatorTrait.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54820144" vertical-offset="844" max-vertical-offset="3200">
-          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.64028776" vertical-offset="2380" max-vertical-offset="3200">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
           <folding>
             <marker date="1417805913000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
             <marker date="1417805913000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -718,20 +679,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/User/UserValidatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4964029" vertical-offset="5530" max-vertical-offset="6225">
-          <caret line="242" column="6" selection-start-line="242" selection-start-column="6" selection-end-line="247" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.9640288" vertical-offset="5905" max-vertical-offset="7025">
+          <caret line="270" column="31" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.352518" vertical-offset="1130" max-vertical-offset="2100">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="2" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <marker date="1417807124000" expanded="true" signature="1543:1847" placeholder="{...}" />
-            <marker date="1417807124000" expanded="true" signature="1634:1778" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.46043167" vertical-offset="930" max-vertical-offset="2225">
+          <caret line="55" column="86" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
