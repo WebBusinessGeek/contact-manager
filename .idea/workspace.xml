@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/User/UserInvokerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/User/UserRepositoryTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserFactory.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserInvoker.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserInvoker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserRepository.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
@@ -35,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserInvoker.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserInvoker.php">
+      <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.352518" vertical-offset="30" max-vertical-offset="750">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.24460432" vertical-offset="130" max-vertical-offset="900">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -295,13 +293,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactCommandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53956836" vertical-offset="1725" max-vertical-offset="3050">
-          <caret line="89" column="87" selection-start-line="89" selection-start-column="87" selection-end-line="89" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/ContactDirectory/ContactInvoker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60431653" vertical-offset="1080" max-vertical-offset="1775">
@@ -348,13 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877698" vertical-offset="0" max-vertical-offset="695">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -627,26 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32374102" vertical-offset="500" max-vertical-offset="1825">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <marker date="1417741612000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417741612000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39568347" vertical-offset="0" max-vertical-offset="695">
@@ -690,6 +654,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.352518" vertical-offset="30" max-vertical-offset="750">
           <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding>
+            <marker date="1417742215000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417742215000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417742215000" expanded="true" signature="-1:-1" placeholder=" Adds email and hashed password to a user instance. ..." />
+            <marker date="1417742215000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39568347" vertical-offset="500" max-vertical-offset="1825">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <marker date="1417742279000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417742279000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/User/UserRepositoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.676259" vertical-offset="580" max-vertical-offset="1275">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <marker date="1417743138000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
+            <marker date="1417743138000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1417743138000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1417743138000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1417743138000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/MyStuff/UserDirectory/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24460432" vertical-offset="130" max-vertical-offset="900">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding />
         </state>
       </provider>

@@ -32,14 +32,14 @@ class UserCommandController {
                 - create a new user instance
                 $this->factory->createNewUser() - DONE
                 - add necessary attributes to instance
-                $this->invoker->addEmailAndPasswordToUser()
+                $this->invoker->addEmailAndPasswordToUser() - DONE
                 - store it in database
-                $this->repository->saveUser()
+                $this->repository->saveUser() -
                 - return stored feedback
-                $this->responder->sendMessage('stored')
+                $this->responder->sendMessage('stored') - DONE
             - If invalid
                 - return error message
-                $this->responder->sendMessage('Invalid Email or Password format')
+                $this->responder->sendMessage('Invalid Email or Password format') - DONE
          * */
     }
 
