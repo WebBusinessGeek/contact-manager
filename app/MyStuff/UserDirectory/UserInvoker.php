@@ -28,7 +28,12 @@ class UserInvoker {
     }
 
 
-
+    /**
+     * Dynamically adds new attributes passed in as an array argument to a User instance.
+     * @param User $user
+     * @param array $newAttributes
+     * @return User
+     */
     public function addNewAttributesToUser(User $user, $newAttributes = array())
     {
         foreach($newAttributes as $key => $value)
