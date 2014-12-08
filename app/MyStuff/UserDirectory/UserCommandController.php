@@ -97,20 +97,21 @@ class UserCommandController {
         return $this->responder->sendMessage('User unidentified or Invalid attributes supplied.');
     }
 
+    /**
+     * Deletes a user instance from the users database table, otherwise sends an error message.
+     * @param $user_id
+     * @return \Illuminate\Database\Eloquent\Collection|mixed
+     */
     public function destroy($user_id)
     {
-        /*
+        $user = $this->show($user_id);
 
-        $user = $this->show($user_id); DONE
-
-        check if $user is a contact instance DONE
-            - if so
-                - delete the user Not Done
-                - return responder->sendMessage('Deleted') DONE
-            - if not
-                - return $user; //which will be an error message DONE
-
-         * */
+        if($this->validator->isUserInstance($user))
+        {
+            $this->invoker->deleteUserAccount($user);
+            return $this->responder->sendMessage('Deleted');
+        }
+        return $user;
     }
 
     public function login()

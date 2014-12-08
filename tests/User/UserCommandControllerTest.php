@@ -105,11 +105,22 @@ class UserCommandControllerTest extends \TestCase{
     public function test_userCommandController_destroy_method_deletes_a_user_instance_if_it_exists_otherwise_sends_error_message()
     {
         //create new user instance in database
+        $userCommandController = new UserCommandController();
+        $userCommandController->store('userCommandController@destroyMethodTest1.com', 'testtesttest123');
 
         //retrieve it to assert its attributes
+        $dbUserProof = $userCommandController->repository->getUserByEmail('userCommandController@destroyMethodTest1.com');
+        $this->assertEquals('userCommandController@destroyMethodTest1.com', $dbUserProof->email);
 
         //call destroy method
+        $userCommandController->destroy($dbUserProof->id);
 
         //assert its no longer in database
+        $noUserProof = $userCommandController->repository->getUserByEmail('userCommandController@destroyMethodTest1.com');
+        $this->assertEquals(null, $noUserProof);
+
+        //assert error message on bad id submission
+        $this->assertEquals('No user by that id', $userCommandController->destroy('adfsd'));
+
     }
 }
