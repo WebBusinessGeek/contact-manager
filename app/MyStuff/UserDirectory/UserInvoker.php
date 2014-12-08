@@ -43,4 +43,14 @@ class UserInvoker {
         return $user;
     }
 
+
+    /**
+     * Deletes a User instance from the users database table.
+     * @param User $user
+     */
+    public function deleteUserAccount(User $user)
+    {
+        $user->destroy($user->id);
+    }
+
 }

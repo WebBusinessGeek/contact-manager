@@ -80,7 +80,7 @@ class UserCommandController {
     }
 
     /**
-     * Updates a user if instance exists and attributes passed in are valid, otherwise sends an error message. 
+     * Updates a user if instance exists and attributes passed in are valid, otherwise sends an error message.
      * @param $user_id
      * @param array $newAttributes
      * @return mixed
@@ -97,9 +97,20 @@ class UserCommandController {
         return $this->responder->sendMessage('User unidentified or Invalid attributes supplied.');
     }
 
-    public function destroy()
+    public function destroy($user_id)
     {
+        /*
 
+        $user = $this->show($user_id); DONE
+
+        check if $user is a contact instance DONE
+            - if so
+                - delete the user Not Done
+                - return responder->sendMessage('Deleted') DONE
+            - if not
+                - return $user; //which will be an error message DONE
+
+         * */
     }
 
     public function login()

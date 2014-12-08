@@ -9,6 +9,7 @@
 namespace tests\User;
 
 
+use App\MyStuff\UserDirectory\UserCommandController;
 use App\MyStuff\UserDirectory\UserInvoker;
 use App\User;
 use Illuminate\Foundation\Testing\TestCase;
@@ -54,6 +55,25 @@ class UserInvokerTest extends \TestCase{
         ];
         $updatedUser = $userInvoker->addNewAttributesToUser($user, $attr);
         $this->assertEquals('userInvoker@addNewAttributesToUserMethodTest2.com', $updatedUser->email);
+    }
+
+    public function test_userInvoker_deleteUserAccount_method_deletes_a_user_instance_from_database()
+    {
+        $userInvoker = new UserInvoker();
+        //create a new instance and save to database
+        $userCommandController = new UserCommandController();
+        $userCommandController->store('userInvoker@deleteUserAccountMethodTest1.com', 'testtesttest123');
+
+        //retrieve it to prove existence in the table
+        $dbUserProof = $userCommandController->repository->getUserByEmail('userInvoker@deleteUserAccountMethodTest1.com');
+        $this->assertEquals('userInvoker@deleteUserAccountMethodTest1.com', $dbUserProof->email);
+
+        //call deleteUserAccount method on instance
+        $userInvoker->deleteUserAccount($dbUserProof);
+
+        //assert its no longer in the database
+        $noUserProof = $userCommandController->repository->getUserByEmail('userInvoker@deleteUserAccountMethodTest1.com');
+        $this->assertEquals(null, $noUserProof);
     }
 
 }

@@ -101,4 +101,15 @@ class UserCommandControllerTest extends \TestCase{
         $this->assertEquals('User unidentified or Invalid attributes supplied.', $userCommandController->update('asdasre', $attr));
         $this->assertEquals('User unidentified or Invalid attributes supplied.', $userCommandController->update(1, $badAttr));
     }
+
+    public function test_userCommandController_destroy_method_deletes_a_user_instance_if_it_exists_otherwise_sends_error_message()
+    {
+        //create new user instance in database
+
+        //retrieve it to assert its attributes
+
+        //call destroy method
+
+        //assert its no longer in database
+    }
 }
