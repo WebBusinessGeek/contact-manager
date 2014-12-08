@@ -79,22 +79,22 @@ class UserCommandController {
         }
     }
 
+    /**
+     * Updates a user if instance exists and attributes passed in are valid, otherwise sends an error message. 
+     * @param $user_id
+     * @param array $newAttributes
+     * @return mixed
+     */
     public function update($user_id, $newAttributes = array())
     {
-        /*
+        $user = $this->show($user_id);
 
-        $user = $this->show($user_id); - DONE
-
-        check if $user is a User or an error message - DONE && check if $newAttributes are valid - DONE
-
-            - if user && attributes are valid
-                - $this->invoker->addNewAttributesToUser($user, $newAttributes) - Not Done
-                - $this->repository->saveUser($user) - DONE
-                - return $this->responder->sendMessage('Updated') - DONE
-            - if false
-                - return $this->responder->sendMessage('User cannot be updated.') - DONE
-
-         * */
+        if($this->validator->isUserInstance($user) && $this->validator->isValidAttributes($newAttributes))
+        {
+            $this->repository->saveUser($this->invoker->addNewAttributesToUser($user, $newAttributes));
+            return $this->responder->sendMessage('Updated');
+        }
+        return $this->responder->sendMessage('User unidentified or Invalid attributes supplied.');
     }
 
     public function destroy()

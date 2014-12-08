@@ -11,6 +11,7 @@ namespace tests\User;
 
 use App\MyStuff\UserDirectory\UserCommandController;
 use Illuminate\Foundation\Testing\TestCase;
+use Symfony\Component\Security\Core\User\User;
 
 class UserCommandControllerTest extends \TestCase{
 
@@ -68,5 +69,36 @@ class UserCommandControllerTest extends \TestCase{
 
         //show method on bad id and assert error message
         $this->assertEquals('No user by that id', $userCommandController->show('aaabbb'));
+    }
+
+    public function test_userCommandController_update_method_updates_a_user_instances_attributes()
+    {
+        //create User instance
+        $userCommandController = new UserCommandController();
+        $userCommandController->store('userCommandController@updateMethodTest1.com', 'testtesttest123');
+
+        //assert user instances attributes
+        $user = $userCommandController->repository->getUserByEmail('userCommandController@updateMethodTest1.com');
+        $this->assertEquals('userCommandController@updateMethodTest1.com', $user->email);
+
+        //call update method and assert new changes
+        $attr = [
+            'email' => 'userCommandController@updateMethodTest2.com'
+        ];
+        $userCommandController->update($user->id, $attr);
+
+        $afterUpdateUser = $userCommandController->show($user->id);
+        $this->assertEquals('userCommandController@updateMethodTest2.com', $afterUpdateUser->email);
+
+        //delete user from db
+        $afterUpdateUser->destroy($user->id);
+
+        //call update method with inaccurate attributes and assert error message.
+        $badAttr = [
+            'bar' => 'foo',
+            'baz' => 'boo',
+        ];
+        $this->assertEquals('User unidentified or Invalid attributes supplied.', $userCommandController->update('asdasre', $attr));
+        $this->assertEquals('User unidentified or Invalid attributes supplied.', $userCommandController->update(1, $badAttr));
     }
 }
