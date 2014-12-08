@@ -85,7 +85,7 @@ class UserCommandController {
 
         $user = $this->show($user_id); - DONE
 
-        check if $user is a User or an error message - DONE && check if $newAttributes are valid - Not Done
+        check if $user is a User or an error message - DONE && check if $newAttributes are valid - DONE
 
             - if user && attributes are valid
                 - $this->invoker->addNewAttributesToUser($user, $newAttributes) - Not Done

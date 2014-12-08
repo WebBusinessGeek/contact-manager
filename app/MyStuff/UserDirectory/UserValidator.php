@@ -14,7 +14,7 @@ use App\MyStuff\Polymorphic\ValidatorTrait;
 class UserValidator {
 
     public $allowedAttributes = [
-        'email'
+        'email' => null
     ];
 
     use ValidatorTrait;
@@ -42,12 +42,17 @@ class UserValidator {
     }
 
 
-
+    /**
+     * Returns true is attribute values passed in are usable in the system.
+     * @param array $newAttributes
+     * @return bool
+     */
     public function isValidAttributes($newAttributes = array())
     {
-//        return($this->matchesArrayLength($newAttributes, $this->allowedAttributes) &&
-//                $this->matchesArrayKeys($newAttributes, $this->allowedAttributes) &&
-//                $this->isValidFormatLooper($newAttributes));
+        return($this->matchesArrayLength($newAttributes, $this->allowedAttributes) &&
+                $this->matchesArrayKeys($newAttributes, $this->allowedAttributes) &&
+                $this->isValidFormatLooper($newAttributes));
+
     }
 
     /**

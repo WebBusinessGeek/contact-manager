@@ -110,37 +110,44 @@ class UserValidatorTest extends \TestCase {
 
     }
 
-    public function test_userValidator_newAttributesAreValid_method_returns_boolean_determining_if_attributes_passed_in_are_valid()
+    public function test_userValidator_isValidAttributes_method_returns_boolean_determining_if_attributes_passed_in_are_valid()
     {
-//        //validator instance
-//        $userValidator = new UserValidator();
-//
-//        //good attribute arrays
-//        $goodAttr1 = [
-//            'email' => 'someUser@email.com'
-//        ];
-//
-//        $goodAttr2 = [
-//            'email' => 'anotherUser@email.com'
-//        ];
-//
-//        //bad attribute arrays
-//        $badAttr1 = [
-//            'mail' => 'someUser@email.com'
-//        ];
-//
-//        $badAttr2 = [
-//            'email' => 'mail.com'
-//        ];
-//
-//
-//        //assert good are true
-//        $this->assertTrue($userValidator->isValidAttributes($goodAttr1));
-//        $this->assertTrue($userValidator->isValidAttributes($goodAttr2));
-//
-//        //assert bad are false
-//        $this->assertFalse($userValidator->isValidAttributes($badAttr1));
-//        $this->assertFalse($userValidator->isValidAttributes($badAttr2));
+        //validator instance
+        $userValidator = new UserValidator();
+
+        //good attribute arrays
+        $goodAttr1 = [
+            'email' => 'someUser@email.com'
+        ];
+
+        $goodAttr2 = [
+            'email' => 'anotherUser@email.com'
+        ];
+
+        //bad attribute arrays
+        $badAttr1 = [
+            'mail' => 'someUser@email.com'
+        ];
+
+        $badAttr2 = [
+            'email' => 'mail.com'
+        ];
+
+        $badAttr3 = [
+            'email' => 'goodemail@email.com',
+            'extraKey' => 'something'
+        ];
+
+
+        //assert good are true
+        $this->assertTrue($userValidator->isValidAttributes($goodAttr1));
+        $this->assertTrue($userValidator->isValidAttributes($goodAttr2));
+
+        //assert bad are false
+        $this->assertFalse($userValidator->isValidAttributes($badAttr1));
+        $this->assertFalse($userValidator->isValidAttributes($badAttr2));
+        $this->assertFalse($userValidator->isValidAttributes($badAttr3));
+
     }
 
 
@@ -280,7 +287,7 @@ class UserValidatorTest extends \TestCase {
 
     public function test_userValidator_isValidaAttributes_method_accurately_checks_if_values_are_acceptable()
     {
-        
+
     }
 
 
