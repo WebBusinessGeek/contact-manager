@@ -33,6 +33,27 @@ class UserInvokerTest extends \TestCase{
         $this->assertEquals('myemail@email.com', $user->email);
         $this->assertTrue(password_verify('password232123', $user->password));
 
-
     }
+
+
+    public function test_userInvoker_addNewAttributesToUser_method_adds_passed_in_arguments_as_attributes_to_user_instance()
+    {
+        //invoker instance
+        $userInvoker = new UserInvoker();
+
+        //user instance
+        $user = new User();
+
+        //add attributes to user and assert them
+        $user->email = 'userInvoker@addNewAttributesToUserMethodTest1.com';
+        $this->assertEquals('userInvoker@addNewAttributesToUserMethodTest1.com', $user->email);
+
+        //call addNewAttributesToUser method and assert the new attributes
+        $attr = [
+            'email' => 'userInvoker@addNewAttributesToUserMethodTest2.com'
+        ];
+        $updatedUser = $userInvoker->addNewAttributesToUser($user, $attr);
+        $this->assertEquals('userInvoker@addNewAttributesToUserMethodTest2.com', $updatedUser->email);
+    }
+
 }

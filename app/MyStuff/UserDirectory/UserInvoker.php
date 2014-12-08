@@ -27,4 +27,15 @@ class UserInvoker {
         return $user;
     }
 
+
+
+    public function addNewAttributesToUser(User $user, $newAttributes = array())
+    {
+        foreach($newAttributes as $key => $value)
+        {
+            $user->$key = $value;
+        }
+        return $user;
+    }
+
 }
