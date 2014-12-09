@@ -114,9 +114,15 @@ class UserCommandController {
         return $user;
     }
 
-    public function login()
+    public function login($email, $password)
     {
+        /*
 
+        $authUser = $this->authenticator->attemptToLoginUser($email, $password) - Not done
+
+        return ($this->validator->isUserInstance($authUser)) ? $authUser : $this->responder->sendMessage('Login Failed. Incorrect Credentials.');
+
+         * */
     }
 
     public function logout()

@@ -123,4 +123,5 @@ class UserCommandControllerTest extends \TestCase{
         $this->assertEquals('No user by that id', $userCommandController->destroy('adfsd'));
 
     }
+
 }

@@ -4,8 +4,10 @@ use App\MyStuff\ContactDirectory\Contact;
 use App\MyStuff\ContactDirectory\ContactRepository;
 use App\MyStuff\OptionReturner\OptionReturnerCommandController;
 use App\MyStuff\OptionReturner\OptionReturnerInternalService;
+use App\MyStuff\UserDirectory\UserAuthenticator;
 use App\MyStuff\UserDirectory\UserRepository;
 use Illuminate\Database\DatabaseManager as DB;
+use Illuminate\Foundation\Application;
 
 class HomeController extends Controller {
 
@@ -24,18 +26,9 @@ class HomeController extends Controller {
 
 	public function index()
 	{
+		$auth = new UserAuthenticator();
 
-//		//new repo
-//		$userRepo = new UserRepository();
-//
-//
-//		//call getAllUsers
-//		$users = $userRepo->getAllUsers();
-//
-//		dd($users[0]->email);
-
-
-
+		dd($auth->attemptToLoginUser('ciara13@gleason.com', 'testtest'));
 	}
 
 }
