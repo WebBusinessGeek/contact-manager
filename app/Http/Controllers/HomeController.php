@@ -6,8 +6,10 @@ use App\MyStuff\OptionReturner\OptionReturnerCommandController;
 use App\MyStuff\OptionReturner\OptionReturnerInternalService;
 use App\MyStuff\UserDirectory\UserAuthenticator;
 use App\MyStuff\UserDirectory\UserRepository;
+use Illuminate\Auth\AuthServiceProvider;
 use Illuminate\Database\DatabaseManager as DB;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller {
 
@@ -28,7 +30,24 @@ class HomeController extends Controller {
 	{
 		$auth = new UserAuthenticator();
 
-		dd($auth->attemptToLoginUser('ciara13@gleason.com', 'testtest'));
+		$auth->attemptToLoginUser('ohermann@gmail.com', 'testtest');
+
+		$auth->auth->getLoggedInUser();
+
+		dd($auth->auth->getSession());
+
+	}
+
+	public function authCheck()
+	{
+
+//		if($auth->isLoggedIn())
+//		{
+//			return 'yup logged in';
+//		}
+//		return 'nope not logged in';
+
+		dd($auth->auth->getLoggedInUser());
 	}
 
 }

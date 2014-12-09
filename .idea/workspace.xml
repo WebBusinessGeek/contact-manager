@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="178519a9-5521-499e-afb4-f8d24d4c8728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserAuthenticator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/User/UserAuthenticatorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" afterPath="$PROJECT_DIR$/app/MyStuff/UserDirectory/UserCommandController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/User/UserCommandControllerTest.php" afterPath="$PROJECT_DIR$/tests/User/UserCommandControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contactmgr2.iws" />
@@ -35,36 +32,18 @@
     <favorites_list name="contactmgr2" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.74820143" vertical-offset="55" max-vertical-offset="825">
-                  <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2086331" vertical-offset="1930" max-vertical-offset="2700">
-                  <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28057554" vertical-offset="2505" max-vertical-offset="3200">
+              <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,7 +115,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -150,57 +129,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contactmgr2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyStuff" />
+              <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,7 +207,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44119695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24913013" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44135535" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -284,6 +216,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24913013" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -310,34 +243,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/Contact/ContactRepositoryTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2" max-vertical-offset="1975">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Contact/ContactValidatorTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1402" max-vertical-offset="3975">
-          <caret line="70" column="15" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountCommandControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1602" max-vertical-offset="2600">
-          <caret line="82" column="114" selection-start-line="82" selection-start-column="113" selection-end-line="82" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountFactoryTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5979073" vertical-offset="0" max-vertical-offset="669">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/ContactAccount/ContactAccountInternalServiceTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="2" max-vertical-offset="3500">
@@ -525,7 +430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.676259" vertical-offset="30" max-vertical-offset="1425">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -585,22 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877698" vertical-offset="0" max-vertical-offset="695">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/User/UserAuthenticatorTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25179857" vertical-offset="0" max-vertical-offset="695">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1418064451000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1418064451000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1418064451000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,40 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1438849" vertical-offset="0" max-vertical-offset="2650">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is authenticated. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is a guest. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the currently authenticated user. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application without sessions or cookies. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate a user using the given credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate using HTTP Basic Auth. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Perform a stateless HTTP Basic login attempt. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Validate a user's credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log the given user ID into the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the user was authenticated via &quot;remember me&quot; cookie. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log the user out of the application. ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/UserProviderInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1438849" vertical-offset="0" max-vertical-offset="1400">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by their unique identifier. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by by their unique identifier and &quot;remember me&quot; token. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Update the &quot;remember me&quot; token for the given user in storage. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by the given credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Validate a user against the given credentials. ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,156 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1438849" vertical-offset="0" max-vertical-offset="3225">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <marker date="1416595970000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The hasher implementation. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The Eloquent user model. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Create a new database user provider. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by their unique identifier. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by their unique identifier and &quot;remember me&quot; token. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Update the &quot;remember me&quot; token for the given user in storage. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Retrieve a user by the given credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Validate a user against the given credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Create a new instance of the model. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0215828" vertical-offset="0" max-vertical-offset="18525">
-          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding>
-            <marker date="1416595970000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The currently authenticated user. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The user we last attempted to retrieve. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Indicates if the user was authenticated via a recaller cookie. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The user provider implementation. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The session used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The Illuminate cookie creator service. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The request instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" The event dispatcher instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Indicates if the logout method has been called. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Indicates if a token user retrieval has been attempted. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Create a new authentication guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is authenticated. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is a guest. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the currently authenticated user. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the ID for the currently authenticated user. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Pull a user from the repository by its recaller ID. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the decrypted recaller cookie for the request. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the user ID from the recaller cookie. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the recaller cookie is in a valid format. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application without sessions or cookies. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Validate a user's credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate using HTTP Basic Auth. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Perform a stateless HTTP Basic login attempt. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate using basic authentication. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the credential array for a HTTP Basic request. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the response for basic authentication. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate a user using the given credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the user matches the credentials. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Fire the attempt event with the arguments. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Register an authentication attempt event listener. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Update the session with the given ID. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log the given user ID into the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log the given user ID into the application without sessions or cookies. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Queue the recaller cookie into the cookie jar. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Create a remember me cookie for a given ID. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Log the user out of the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Remove the user data from the session and cookies. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Refresh the remember token for the user. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Create a new remember token for the user if one doesn't already exist. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the cookie creator instance used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Set the cookie creator instance used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the event dispatcher instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Set the event dispatcher instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the session store used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the user provider used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Set the user provider used by the guard. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Return the currently cached user of the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Set the current user of the application. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the current request instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Set the current request instance. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the last user we attempted to authenticate. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get a unique identifier for the auth session value. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Get the name of the cookie used to store the &quot;recaller&quot;. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder=" Determine if the user was authenticated via &quot;remember me&quot; cookie. ..." />
-            <marker date="1416595970000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -809,22 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4676259" vertical-offset="0" max-vertical-offset="1825">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2086331" vertical-offset="1930" max-vertical-offset="2700">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,15 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53956836" vertical-offset="0" max-vertical-offset="875">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <marker date="1417727237000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1417727237000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1417727237000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417727237000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417727237000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1417727237000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417727237000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,21 +535,214 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.60431653" vertical-offset="80" max-vertical-offset="850">
           <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7122302" vertical-offset="5" max-vertical-offset="700">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Guard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4172662" vertical-offset="735" max-vertical-offset="2650">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32374102" vertical-offset="0" max-vertical-offset="3650">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
-            <marker date="1418087372000" expanded="false" signature="-1:-1" placeholder=" Created by PhpStorm. ..." />
-            <marker date="1418087372000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1418087372000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1418087372000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1418087372000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1418087372000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1416613721000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/sessions/57fb2425bea60ccac5e499a45d80436b07fce020">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/sessions/bf025d917e2c29777f2d15467df08ffcc4a851b1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/framework/sessions/ee79b30857eca36f8960707e6b444d7aaf5291dd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74820143" vertical-offset="55" max-vertical-offset="825">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.4964029" vertical-offset="330" max-vertical-offset="1250">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+          <folding>
+            <marker date="1418139285000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418139285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418139285000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418139285000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139285000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139285000" expanded="true" signature="-1:-1" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Guard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8201439" vertical-offset="17830" max-vertical-offset="18625">
+          <caret line="742" column="30" selection-start-line="742" selection-start-column="30" selection-end-line="742" selection-end-column="30" />
+          <folding>
+            <marker date="1418139328000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The currently authenticated user. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The user we last attempted to retrieve. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Indicates if the user was authenticated via a recaller cookie. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The user provider implementation. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The session used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The Illuminate cookie creator service. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The request instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" The event dispatcher instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Indicates if the logout method has been called. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Indicates if a token user retrieval has been attempted. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Create a new authentication guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is authenticated. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Determine if the current user is a guest. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the currently authenticated user. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the ID for the currently authenticated user. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Pull a user from the repository by its recaller ID. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the decrypted recaller cookie for the request. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the user ID from the recaller cookie. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Determine if the recaller cookie is in a valid format. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application without sessions or cookies. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Validate a user's credentials. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate using HTTP Basic Auth. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Perform a stateless HTTP Basic login attempt. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate using basic authentication. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the credential array for a HTTP Basic request. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the response for basic authentication. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Attempt to authenticate a user using the given credentials. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Determine if the user matches the credentials. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Fire the attempt event with the arguments. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Register an authentication attempt event listener. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Log a user into the application. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Update the session with the given ID. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Log the given user ID into the application. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Log the given user ID into the application without sessions or cookies. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Queue the recaller cookie into the cookie jar. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Create a remember me cookie for a given ID. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Log the user out of the application. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Remove the user data from the session and cookies. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Refresh the remember token for the user. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Create a new remember token for the user if one doesn't already exist. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the cookie creator instance used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Set the cookie creator instance used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the event dispatcher instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Set the event dispatcher instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the session store used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the user provider used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Set the user provider used by the guard. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Return the currently cached user of the application. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Set the current user of the application. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the current request instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Set the current request instance. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the last user we attempted to authenticate. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get a unique identifier for the auth session value. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Get the name of the cookie used to store the &quot;recaller&quot;. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder=" Determine if the user was authenticated via &quot;remember me&quot; cookie. ..." />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1418139328000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28057554" vertical-offset="2505" max-vertical-offset="3200">
+          <caret line="111" column="5" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
           <folding />
         </state>
       </provider>

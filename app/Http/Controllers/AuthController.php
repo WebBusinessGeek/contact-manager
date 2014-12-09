@@ -92,6 +92,10 @@ class AuthController extends Controller {
 		return redirect('/');
 	}
 
+
+
+
+
 	public function attemptLogin($email, $password)
 	{
 		if ($this->auth->attempt(['email' => $email, 'password' => $password]))
@@ -100,6 +104,22 @@ class AuthController extends Controller {
 		}
 
 		return 'not logged in';
+	}
+
+	public function isLoggedIn()
+	{
+		return $this->auth->check();
+	}
+
+	public function getLoggedInUser()
+	{
+		return $this->auth->id();
+	}
+
+
+	public function getSession()
+	{
+		return $this->auth->transferSession();
 	}
 
 }
